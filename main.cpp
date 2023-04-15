@@ -6,5 +6,5 @@ using namespace std;
 
 int main()
 {
-    
+    cout << "t" << "" << "Temperature" << \n << endl;
 }
