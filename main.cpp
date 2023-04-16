@@ -21,7 +21,7 @@ int main()
 
     char unit_upper = toupper (unit);
 
-    if (unit != 'T')
+    if (unit_upper == 'T')
     {
         if (unit_upper == 'T')
         {
@@ -65,5 +65,5 @@ int main()
 
     char cont_upper = toupper (cont);
 
-    } while (cont_upper == 'Y');
+} while (cont_upper == 'Y');
 }
