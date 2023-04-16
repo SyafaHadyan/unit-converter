@@ -6,6 +6,10 @@ using namespace std;
 
 int main()
 {
+
+    do {
+
+    char cont;
     char unit;
     char convert;
     double temp;
@@ -55,5 +59,11 @@ int main()
     {
         cout << "Invalid input" << endl;
     }
-    
+
+    cout << "Continue (Y/N)?" << " " << endl;
+    cin >> cont;
+
+    char cont_upper = toupper (cont);
+
+    } while (cont_upper == 'Y');
 }
