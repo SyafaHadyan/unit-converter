@@ -25,6 +25,8 @@ int main()
             cout << "Enter temperature:" << " " << endl;
             cin >> temp;
             
+            cout << "F:" << " " << ((temp * 9)/5) + 32 << endl;
+            cout << "K:" << " " << temp + 273.15 << endl;
         }
     }
     else
