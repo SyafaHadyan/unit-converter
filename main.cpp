@@ -9,31 +9,22 @@ int main()
     char unit;
     char convert;
     double temp;
-    char to;
 
-    cout << "T" << " " << "Temperature" << "\n" << endl;
+    cout << "T" << " " << "=" << " " << "Temperature" << "\n" << endl;
     
     cout << "Select unit:" << " " << endl;
     cin >> unit;
 
-    cout << "C = Celcius" << endl;
-    cout << "F = Fahrenheit" << endl;
-    cout << "K = Kelvin" << endl;
-    cin >> convert;
-
     if (unit == 'T' || unit == 't')
     {
+        cout << "Enter C or F or or K:" << " " << endl;
+        cin >> convert;
+
         if (convert == 'C' || convert == 'c')
         {
-            cout << "Enter temperature to convert:" << " " << endl;
+            cout << "Enter temperature:" << " " << endl;
             cin >> temp;
-            cout << "to:" << " " << endl;
-            cin >> to;
             
-            if (temp == 'T' || 't')
-            {
-                double result = (5/9)*(temp - 32);
-            }
         }
     }
     else
