@@ -49,12 +49,11 @@ int main()
                 cout << "F:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
             }
 
+        }
     }
     else
     {
         cout << "Invalid input" << endl;
-    }
-
     }
     
 }
