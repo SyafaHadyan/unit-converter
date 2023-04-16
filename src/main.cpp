@@ -63,7 +63,7 @@ int main()
     cout << "Continue (Y/N)?" << " " << endl;
     cin >> cont;
 
-    char cont_upper = toupper (cont);
-
+    char cont_upper = cont;
+    char cont_upper = toupper (cont_upper);
 } while (cont_upper == 'Y');
 }
