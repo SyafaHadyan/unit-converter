@@ -15,23 +15,29 @@ int main()
     cout << "Select unit:" << " " << endl;
     cin >> unit;
 
-    if (unit == 'T' || unit == 't')
-    {
-        cout << "Enter C or F or or K:" << " " << endl;
-        cin >> convert;
+    char unit_upper = toupper (unit);
 
-        if (convert == 'C' || convert == 'c')
+    if (unit != 'T')
+    {
+        if (unit == 'T')
         {
-            cout << "Enter temperature:" << " " << endl;
-            cin >> temp;
+            cout << "Enter C or F or or K:" << " " << endl;
+            cin >> convert;
+
+            if (convert == 'C')
+            {
+                cout << "Enter temperature:" << " " << endl;
+                cin >> temp;
             
-            cout << "F:" << " " << ((temp * 9)/5) + 32 << endl;
-            cout << "K:" << " " << temp + 273.15 << endl;
-        }
+                cout << "F:" << " " << ((temp * 9)/5) + 32 << endl;
+                cout << "K:" << " " << temp + 273.15 << endl;
+            }
     }
     else
     {
         cout << "Invalid input" << endl;
     }
 
+    }
+    
 }
