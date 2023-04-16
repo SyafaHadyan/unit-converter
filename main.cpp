@@ -19,7 +19,7 @@ int main()
 
     if (unit != 'T')
     {
-        if (unit == 'T')
+        if (unit_upper == 'T')
         {
             cout << "Enter C or F or or K:" << " " << endl;
             cin >> convert;
