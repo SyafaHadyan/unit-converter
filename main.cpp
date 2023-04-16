@@ -32,6 +32,15 @@ int main()
                 cout << "F:" << " " << ((temp * 9)/5) + 32 << endl;
                 cout << "K:" << " " << temp + 273.15 << endl;
             }
+            if (convert == 'F')
+            {
+                cout << "Enter temperature:" << " " << endl;
+                cin >> temp;
+
+            	cout << "C:" << " " << ((temp - 32)*5)/9 << endl;
+                cout << "K:" << " " << temp + 459.67 << endl;
+
+            }
     }
     else
     {
