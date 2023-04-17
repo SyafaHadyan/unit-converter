@@ -9,12 +9,12 @@ int main()
 
     do {
 
-    char cont;
-    char unit;
-    char convert;
-    double temp;
+        char cont;
+        char unit;
+        char convert;
+        double temp;
 
-    cout << "T" << " " << "=" << " " << "Temperature" << "\n" << endl;
+        cout << "T" << " " << "=" << " " << "Temperature" << "\n" << endl;
     
     cout << "Select unit:" << " " << endl;
     cin >> unit;
