@@ -7,15 +7,15 @@ using namespace std;
 int main()
 {
 
-    do {
+    char unit;
+    char convert;
+    double temp;
 
-        char cont;
-        char unit;
-        char convert;
-        double temp;
-
-        cout << "T" << " " << "=" << " " << "Temperature" << "\n" << endl;
+    cout << "T" << " " << "=" << " " << "Temperature" << "\n" << endl;
     
+    do
+    {
+
     cout << "Select unit:" << " " << endl;
     cin >> unit;
 
@@ -60,10 +60,6 @@ int main()
         cout << "Invalid input" << endl;
     }
 
-    cout << "Continue (Y/N)?" << " " << endl;
-    cin >> cont;
-
-    char cont_upper = cont;
-    char cont_upper = toupper (cont_upper);
-} while (cont_upper == 'Y');
+    }
+    while (true);
 }
