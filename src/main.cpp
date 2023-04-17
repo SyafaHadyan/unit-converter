@@ -28,7 +28,9 @@ int main()
             cout << "Enter C or F or or K:" << " ";
             cin >> convert;
 
-            if (convert == 'C')
+            char convert_upper = toupper (convert);
+
+            if (convert_upper == 'C')
             {
                 cout << "Enter temperature:" << " ";
                 cin >> temp;
@@ -36,7 +38,7 @@ int main()
                 cout << "F:" << " " << ((temp * 9)/5) + 32;
                 cout << "K:" << " " << temp + 273.15;
             }
-            else if (convert == 'F')
+            else if (convert_upper == 'F')
             {
                 cout << "Enter temperature:" << " ";
                 cin >> temp;
@@ -44,7 +46,7 @@ int main()
             	cout << "C:" << " " << ((temp - 32)*5)/9;
                 cout << "K:" << " " << temp + 459.67 ;
             }
-            else if (convert == 'K')
+            else if (convert_upper == 'K')
             {
                 cout << "Enter temperature:" << " ";
                 cin >> temp;
