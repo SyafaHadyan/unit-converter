@@ -16,7 +16,7 @@ int main()
     do
     {
 
-    cout << "Select unit:" << " " << endl;
+    cout << "Select unit:" << " ";
     cin >> unit;
 
     char unit_upper = toupper (unit);
@@ -25,32 +25,32 @@ int main()
     {
         if (unit_upper == 'T')
         {
-            cout << "Enter C or F or or K:" << " " << endl;
+            cout << "Enter C or F or or K:" << " ";
             cin >> convert;
 
             if (convert == 'C')
             {
-                cout << "Enter temperature:" << " " << endl;
+                cout << "Enter temperature:" << " ";
                 cin >> temp;
 
-                cout << "F:" << " " << ((temp * 9)/5) + 32 << endl;
-                cout << "K:" << " " << temp + 273.15 << endl;
+                cout << "F:" << " " << ((temp * 9)/5) + 32;
+                cout << "K:" << " " << temp + 273.15;
             }
             else if (convert == 'F')
             {
-                cout << "Enter temperature:" << " " << endl;
+                cout << "Enter temperature:" << " ";
                 cin >> temp;
 
-            	cout << "C:" << " " << ((temp - 32)*5)/9 << endl;
-                cout << "K:" << " " << temp + 459.67 << endl;
+            	cout << "C:" << " " << ((temp - 32)*5)/9;
+                cout << "K:" << " " << temp + 459.67 ;
             }
             else if (convert == 'K')
             {
-                cout << "Enter temperature:" << " " << endl;
+                cout << "Enter temperature:" << " ";
                 cin >> temp;
 
-                cout << "C:" << " " << (temp - 273.15) << endl;
-                cout << "F:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
+                cout << "C:" << " " << (temp - 273.15);
+                cout << "F:" << " " << ((temp - 273.15)*9)/5 + 32;
             }
 
         }
