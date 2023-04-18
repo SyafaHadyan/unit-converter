@@ -11,7 +11,7 @@ int main()
     char convert;
     double temp;
 
-    cout << "T" << " " << "=" << " " << "Temperature" << "\n" << endl;
+    cout << "(T)" << " " << "Temperature" << "\n" << endl;
     
     do
     {
@@ -25,6 +25,7 @@ int main()
     {
         if (unit_upper == 'T')
         {
+            cout << "(C) Celcius" << "\n" << "(F) Fahrenheit" << "\n" << "(K) Kelvin" << "\n" << endl;
             cout << "Enter C or F or or K:" << " ";
             cin >> convert;
 
@@ -35,24 +36,24 @@ int main()
                 cout << "Enter temperature:" << " ";
                 cin >> temp;
 
-                cout << "F:" << " " << ((temp * 9)/5) + 32 << endl;
-                cout << "K:" << " " << temp + 273.15 << endl;
+                cout << "Fahrenheit:" << " " << ((temp * 9)/5) + 32 << endl;
+                cout << "Kelvin:" << " " << temp + 273.15 << endl;
             }
             else if (convert_upper == 'F')
             {
                 cout << "Enter temperature:" << " ";
                 cin >> temp;
 
-            	cout << "C:" << " " << ((temp - 32)*5)/9 << endl;
-                cout << "K:" << " " << temp + 459.67 << endl;
+            	cout << "Celcius:" << " " << ((temp - 32)*5)/9 << endl;
+                cout << "Kelvin:" << " " << temp + 459.67 << endl;
             }
             else if (convert_upper == 'K')
             {
                 cout << "Enter temperature:" << " ";
                 cin >> temp;
 
-                cout << "C:" << " " << (temp - 273.15) << endl;
-                cout << "F:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
+                cout << "Celcius:" << " " << (temp - 273.15) << endl;
+                cout << "Fahrenheit:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
             }
 
         }
