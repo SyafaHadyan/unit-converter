@@ -25,7 +25,7 @@ int main()
     {
         if (unit_upper == 'T')
         {
-            cout << "(C) Celcius" << "\n" << "(F) Fahrenheit" << "\n" << "(K) Kelvin" << "\n" << endl;
+            cout << "\n" << "(C) Celcius" << "\n" << "(F) Fahrenheit" << "\n" << "(K) Kelvin" << "\n" << endl;
             cout << "Enter C or F or or K:" << " ";
             cin >> convert;
 
@@ -60,7 +60,7 @@ int main()
     }
     else
     {
-        cout << "Invalid input" << endl;
+        cout << "\n" << "Invalid input" << "\n" << endl;
     }
 
     }
