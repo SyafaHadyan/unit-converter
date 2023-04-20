@@ -59,8 +59,8 @@ int main()
         }
         else if (convert_upper)
         {
-            cout << a
-            cout << a
+            cout << "\n" << "(G) Gram" << "\n" << "(KG) Kilogram" << "\n" << "(MG) Miligram" << "\n" << "(OZ) Ounce" << "\n" << "(lb) Pound" << endl;
+            cout << "Select"
             cin >> convert;
 
             char convert_upper = toupper (convert);
