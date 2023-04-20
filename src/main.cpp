@@ -57,7 +57,7 @@ int main()
                 cout << "Fahrenheit:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
             }
         }
-        else if (convert_upper)
+        else if (unit_upper == 'W')
         {
             cout << "\n" << "(G) Gram" << "\n" << "(KG) Kilogram" << "\n" << "(MG) Miligram" << "\n" << "(OZ) Ounce" << "\n" << "(lb) Pound" << endl;
             cout << "Select"
