@@ -60,7 +60,7 @@ int main()
         else if (unit_upper == 'W')
         {
             cout << "\n" << "(G) Gram" << "\n" << "(KG) Kilogram" << "\n" << "(MG) Miligram" << "\n" << "(OZ) Ounce" << "\n" << "(lb) Pound" << endl;
-            cout << "Select"
+            cout << "Select";
             cin >> convert;
 
             char convert_upper = toupper (convert);
