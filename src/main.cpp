@@ -11,11 +11,11 @@ int main()
     char convert;
     double temp;
 
-    cout << "(T)" << " " << "Temperature" << "\n" << endl;
-    
     do
     {
-
+    
+    cout << "(T)" << " " << "Temperature" << "\n" << endl;
+    
     cout << "Select unit:" << " ";
     cin >> unit;
 
