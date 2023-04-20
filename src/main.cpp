@@ -15,13 +15,14 @@ int main()
     {
     
     cout << "(T)" << " " << "Temperature" << "\n" << endl;
+    cout << "(W)" << " " << "Weight" << "\n" << endl;
     
     cout << "Select unit:" << " ";
     cin >> unit;
 
     char unit_upper = toupper (unit);
 
-    if (unit_upper == 'T')
+    if (unit_upper == 'T' || unit_upper == 'W')
     {
         if (unit_upper == 'T')
         {
@@ -55,7 +56,16 @@ int main()
                 cout << "Celcius:" << " " << (temp - 273.15) << endl;
                 cout << "Fahrenheit:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
             }
+        }
+        else if (convert_upper)
+        {
+            cout << a
+            cout << a
+            cin >> convert;
 
+            char convert_upper = toupper (convert);
+
+            if 
         }
     }
     else
