@@ -99,7 +99,6 @@ int main()
                 cout << "Pound:" << " " << ((weight * 2.2046) / 1000) << endl;
 
             }
-
         }
     }
     else
