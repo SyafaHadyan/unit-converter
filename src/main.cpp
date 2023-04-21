@@ -118,6 +118,12 @@ int main()
                 cout << "Pound:" << " " << (weight / static_cast<double>(1000)) * 2.2046 << endl;
             }
             else if (convert_upper == 'M')
+            {
+                input_weight();
+
+                cout << "Gram:" << " " << weight * 1000 << endl;
+                cout << "Kilogram:" << " " << weight * 1000 << endl;
+            }
         }
     }
     else
