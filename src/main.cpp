@@ -5,42 +5,42 @@
 
 using namespace std;
 
-    void input_temperature()
-    {
-        cout << "Enter temperature:" << " ";
-        cin >> _temp_;
-    }
+double _temp_;
+double _weight_;
 
-    void input_weight()
-    {
-        cout << "Enter weight:" << " ";
-        cin >> _weight_;
+void input_temperature()
+{
+    cout << "Enter temperature:" << " ";
+    cin >> _temp_;
+}
 
-    }
+void input_weight()
+{
+    cout << "Enter weight:" << " ";
+    cin >> _weight_;
+}
 
 int main()
 {
     vector<string> temperature =
     {
-    "(C) Celcius",
-    "(F) Fahrenheit",
-    "(K) Kelvin"
+        "(C) Celcius",
+        "(F) Fahrenheit",
+        "(K) Kelvin"
     };
 
     vector<string> weight =
     {
-    "(G) Gram"
-    "(KG) Kilogram"
-    "(MG) Miligram"
-    "(OZ) Ounce"
-    "(lb) Pound"
+        "(G) Gram",
+        "(KG) Kilogram",
+        "(MG) Miligram",
+        "(OZ) Ounce",
+        "(lb) Pound"
     };
 
     string unit;
     char convert;
-    double _temp_;
-    double _weight_;
-
+    
     do
     {
     
