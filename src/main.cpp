@@ -98,7 +98,6 @@ int main()
                 cout << "Ounce:" << " " << weight * 4.6566127837927;
                 cout << "Pound:" << " " << ((weight * 2.2046) / 1000) << endl;
 
-
             }
 
         }
