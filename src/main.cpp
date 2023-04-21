@@ -6,6 +6,12 @@ using namespace std;
 
 int main()
 {
+    vector<string> temperature =
+    {
+    "(C) Celcius",
+    "(F) Fahrenheit",
+    "(K) Kelvin"
+    };
 
     char unit;
     char convert;
