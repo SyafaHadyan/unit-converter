@@ -100,8 +100,7 @@ int main()
 
             if (convert_upper == 'G')
             {
-                cout << "Enter weight:" << " ";
-                cin >> _weight_;
+                input_weight();
 
                 cout << "Kilogram:" << " " << weight * 1000 << endl;
                 cout << "Miligram:" << " " << weight * 1000000 << endl;
@@ -110,7 +109,9 @@ int main()
             }
             else if (convert_upper == 'KG')
             {
-                cout enter wei
+                input_weight();
+
+                cout << "Gram:" << " " << weight / 1000 << endl;
             }
         }
     }
