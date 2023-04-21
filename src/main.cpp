@@ -106,7 +106,7 @@ int main()
                 cout << "Kilogram:" << " " << weight * 1000 << endl;
                 cout << "Miligram:" << " " << weight * 1000000 << endl;
                 cout << "Ounce:" << " " << weight * 0.03527396195 << endl;
-                cout << "Pound:" << " << (weight / static_cast<double>(1000)) * 2.2046 << endl;
+                cout << "Pound:" << " " << (weight / static_cast<double>(1000)) * 2.2046 << endl;
             }
             else if (convert_upper == 'KG')
             {
