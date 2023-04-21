@@ -4,6 +4,19 @@
 
 using namespace std;
 
+    void input_temperature()
+    {
+        cout << "Enter temperature:" << " ";
+        cin >> _temp_;
+    }
+
+    void input_weight()
+    {
+        cout << "Enter weight:" << " ";
+        cin >> _weight_;
+
+    }
+
 int main()
 {
     vector<string> temperature =
@@ -26,19 +39,6 @@ int main()
     char convert;
     double _temp_;
     double _weight_;
-
-    void input_temperature()
-    {
-        cout << "Enter temperature:" << " ";
-        cin >> _temp_;
-    }
-
-    void input_weight()
-    {
-        cout << "Enter weight:" << " ";
-        cin >> _weight_;
-
-    }
 
     do
     {
@@ -118,6 +118,7 @@ int main()
     else
     {
         cout << "\n" << "Invalid input" << "\n" << endl;
+        cou
     }
 
     }
