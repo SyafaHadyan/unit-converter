@@ -13,6 +13,15 @@ int main()
     "(K) Kelvin"
     };
 
+    vector<string> weight =
+    {
+    "(G) Gram"
+    "(KG) Kilogram"
+    "(MG) Miligram"
+    "(OZ) Ounce"
+    "(lb) Pound"
+    };
+
     char unit;
     char convert;
     double temp;
@@ -32,8 +41,6 @@ int main()
     {
         if (unit_upper == 'T')
         {
-            for (auto& temperature : temperature) {
-            cout << temperature << endl;
             cout << "Enter C or F or or K:" << " ";
             cin >> convert;
 
@@ -66,13 +73,11 @@ int main()
         }
         else if (unit_upper == 'W')
         {
-            cout << "\n" << "(G) Gram" << "\n" << "(KG) Kilogram" << "\n" << "(MG) Miligram" << "\n" << "(OZ) Ounce" << "\n" << "(lb) Pound" << endl;
             cout << "Select";
             cin >> convert;
 
             char convert_upper = toupper (convert);
 
-            if 
         }
     }
     else
