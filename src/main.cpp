@@ -56,9 +56,9 @@ int main()
     {
         if (unit_upper = "T")
         {
-            for (auto& temperature_ : temperature)
+            for (auto& temperature_list : temperature)
             {
-                cout << temperature_ << "\n" << endl;
+                cout << temperature_list << "\n" << endl;
             }
             cout << "Enter Unit:" << " ";
             cin >> convert;
@@ -89,9 +89,9 @@ int main()
         }
         else if (unit_upper == 'W')
         {
-            for (auto& weight_ : weight)
+            for (auto& weight_list : weight)
             {
-                cout << weight_ << "\n" << endl;
+                cout << weight_list << "\n" << endl;
             }
 
             cout << "Enter Unit:" << " ";
