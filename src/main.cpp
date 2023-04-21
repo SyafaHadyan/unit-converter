@@ -24,7 +24,8 @@ int main()
 
     char unit;
     char convert;
-    double temp;
+    double _temp_;
+    double _weight_;
 
     do
     {
@@ -53,7 +54,7 @@ int main()
             if (convert_upper == 'C')
             {
                 cout << "Enter temperature:" << " ";
-                cin >> temp;
+                cin >> _temp_;
 
                 cout << "Fahrenheit:" << " " << ((temp * 9)/5) + 32 << endl;
                 cout << "Kelvin:" << " " << temp + 273.15 << endl;
@@ -61,7 +62,7 @@ int main()
             else if (convert_upper == 'F')
             {
                 cout << "Enter temperature:" << " ";
-                cin >> temp;
+                cin >> _temp_;
 
             	cout << "Celcius:" << " " << ((temp - 32)*5)/9 << endl;
                 cout << "Kelvin:" << " " << temp + 459.67 << endl;
@@ -69,7 +70,7 @@ int main()
             else if (convert_upper == 'K')
             {
                 cout << "Enter temperature:" << " ";
-                cin >> temp;
+                cin >> _temp_;
 
                 cout << "Celcius:" << " " << (temp - 273.15) << endl;
                 cout << "Fahrenheit:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
@@ -89,7 +90,15 @@ int main()
 
             if (convert_upper == 'G')
             {
-                cout
+                cout << "Enter weight:" << " ";
+                cin >> _weight_;
+
+                cout << "Kilogram:" << " " << weight * 1000 << endl;
+                cout << "Miligram:" << " " << weight * 1000000 << endl;
+                cout << "Ounce:" << " " << weight * 4.6566127837927;
+                cout << "Pound:" << " " << ((weight * 2.2046) / 1000) << endl;
+
+
             }
 
         }
