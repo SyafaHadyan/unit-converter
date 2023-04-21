@@ -41,6 +41,10 @@ int main()
     {
         if (unit_upper == 'T')
         {
+            for (auto& temperature_ : temperature)
+            {
+                cout << temperature_ << endl;
+            }
             cout << "Enter C or F or or K:" << " ";
             cin >> convert;
 
@@ -73,6 +77,11 @@ int main()
         }
         else if (unit_upper == 'W')
         {
+            for (auto& weight_ : weight)
+            {
+                cout << weight_ << endl;
+            }
+
             cout << "Select";
             cin >> convert;
 
