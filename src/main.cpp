@@ -43,9 +43,9 @@ int main()
         {
             for (auto& temperature_ : temperature)
             {
-                cout << temperature_ << endl;
+                cout << temperature_ << "\n" << endl;
             }
-            cout << "Enter C or F or or K:" << " ";
+            cout << "Enter Unit:" << " ";
             cin >> convert;
 
             char convert_upper = toupper (convert);
@@ -79,13 +79,18 @@ int main()
         {
             for (auto& weight_ : weight)
             {
-                cout << weight_ << endl;
+                cout << weight_ << "\n" << endl;
             }
 
-            cout << "Select";
+            cout << "Enter Unit:" << " ";
             cin >> convert;
 
             char convert_upper = toupper (convert);
+
+            if (convert_upper == 'G')
+            {
+                cout
+            }
 
         }
     }
