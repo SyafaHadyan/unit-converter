@@ -5,19 +5,19 @@
 
 using namespace std;
 
-double _temp_;
-double _weight_;
+double temp;
+double weight;
 
 void input_temperature()
 {
     cout << "Enter temperature:" << " ";
-    cin >> _temp_;
+    cin >> temp;
 }
 
 void input_weight()
 {
     cout << "Enter weight:" << " ";
-    cin >> _weight_;
+    cin >> weight;
 }
 
 int main()
