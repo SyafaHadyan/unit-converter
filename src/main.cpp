@@ -33,6 +33,13 @@ int main()
         cin >> _temp_;
     }
 
+    void input_weight()
+    {
+        cout << "Enter weight:" << " ";
+        cin >> _weight_;
+
+    }
+
     do
     {
     
