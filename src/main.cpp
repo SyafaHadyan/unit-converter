@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <vector>
 
 using namespace std;
 
@@ -35,7 +36,7 @@ int main()
     "(lb) Pound"
     };
 
-    char unit;
+    string unit;
     char convert;
     double _temp_;
     double _weight_;
@@ -51,9 +52,9 @@ int main()
 
     char unit_upper = toupper (unit);
 
-    if (unit_upper == 'T' || unit_upper == 'W')
+    if (unit_upper = "T" || unit_upper = "W")
     {
-        if (unit_upper == 'T')
+        if (unit_upper = "T")
         {
             for (auto& temperature_ : temperature)
             {
@@ -116,6 +117,7 @@ int main()
                 cout << "Ounce:" << " " << weight / 4.6566127837927 << endl;
                 cout << "Pound:" << " " << ((weight / 1000) * 2.2046) / 1000000 << endl;
             }
+            else if (convert_upper == 'M')
         }
     }
     else
