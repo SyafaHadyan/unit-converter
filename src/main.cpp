@@ -32,7 +32,8 @@ int main()
     {
         if (unit_upper == 'T')
         {
-            cout << "\n" << "(C) Celcius" << "\n" << "(F) Fahrenheit" << "\n" << "(K) Kelvin" << "\n" << endl;
+            for (auto& temperature : temperature) {
+            cout << temperature << endl;
             cout << "Enter C or F or or K:" << " ";
             cin >> convert;
 
