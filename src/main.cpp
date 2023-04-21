@@ -112,6 +112,9 @@ int main()
                 input_weight();
 
                 cout << "Gram:" << " " << weight / 1000 << endl;
+                cout << "Miligram:" << " " << weight / 1000000 << endl;
+                cout << "Ounce:" << " " << weight / 4.6566127837927 << endl;
+                cout << "Pound:" << " " << ((weight / 1000) * 2.2046) / 1000000 << endl;
             }
         }
     }
