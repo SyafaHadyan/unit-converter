@@ -22,14 +22,14 @@ void input_weight()
 
 int main()
 {
-    vector<string> temperature =
+    vector<string> temperature_units =
     {
         "(C) Celcius",
         "(F) Fahrenheit",
         "(K) Kelvin"
     };
 
-    vector<string> weight =
+    vector<string> weight_units =
     {
         "(G) Gram",
         "(KG) Kilogram",
@@ -52,11 +52,11 @@ int main()
 
     char unit_upper = toupper (unit);
 
-    if (unit_upper = "T" || unit_upper = "W")
+    if (unit_upper = 'T' || unit_upper = 'W')
     {
-        if (unit_upper = "T")
+        if (unit_upper = 'T')
         {
-            for (auto& temperature_list : temperature)
+            for (auto& temperature_list : temperature_units)
             {
                 cout << temperature_list << "\n" << endl;
             }
@@ -89,7 +89,7 @@ int main()
         }
         else if (unit_upper == 'W')
         {
-            for (auto& weight_list : weight)
+            for (auto& weight_list : weight_units)
             {
                 cout << weight_list << "\n" << endl;
             }
@@ -106,16 +106,16 @@ int main()
                 cout << "Kilogram:" << " " << weight * 1000 << endl;
                 cout << "Miligram:" << " " << weight * 1000000 << endl;
                 cout << "Ounce:" << " " << weight * 0.03527396195 << endl;
-                cout << "Pound:" << " " << (weight / static_cast<double>(1000)) * 2.2046 << endl;
+                cout << "Pound:" << " " << (weight / (1000)) * 2.2046 << endl;
             }
             else if (convert_upper == 'KG')
             {
                 input_weight();
 
-                cout << "Gram:" << " " << weight / static_cast<double>(1000) << endl;
-                cout << "Miligram:" << " " << weight / static_cast<double>(1000000) << endl;
-                cout << "Ounce:" << " " << weight / static_cast<double>(0.03527396195) << endl;
-                cout << "Pound:" << " " << (weight / static_cast<double>(1000)) * 2.2046 << endl;
+                cout << "Gram:" << " " << weight / (1000) << endl;
+                cout << "Miligram:" << " " << weight / (1000000) << endl;
+                cout << "Ounce:" << " " << weight / (0.03527396195) << endl;
+                cout << "Pound:" << " " << (weight / (1000)) * 2.2046 << endl;
             }
             else if (convert_upper == 'M')
             {
