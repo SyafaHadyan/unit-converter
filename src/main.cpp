@@ -25,7 +25,7 @@ void input_weight()
 
 void input_length()
 {
-    cout << "Enter lenght:" << " ";
+    cout << "Enter length:" << " ";
     cin >> length;
 }
 
