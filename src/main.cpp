@@ -46,6 +46,13 @@ int main()
         "(lb) Pound"
     };
     
+    vector<string> lenght_units =
+    {
+        "(MM) Millimeter"
+        "(CM) Centimeter",
+        "(M) Meter",
+    }
+
     do
     {
     
