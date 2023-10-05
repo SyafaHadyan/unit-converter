@@ -11,7 +11,7 @@ double length;
 char unit_select;
 char convert;
 
-void convert_upper()
+void convert_upper_toupper()
 {
     char convert_upper = toupper (convert);
 }
@@ -83,7 +83,7 @@ int main()
             }
             enter_unit_convert();
 
-            char convert_upper = toupper (convert);
+            convert_upper_toupper();
 
             if (convert_upper == 'C')
             {
@@ -116,7 +116,7 @@ int main()
 
             enter_unit_convert();
 
-            char convert_upper = toupper (convert);
+            convert_upper_toupper();
 
             if (convert_upper == 'G')
             {
@@ -149,9 +149,17 @@ int main()
             for (auto& length_list : length_units)
             {
                 cout << "Length: " << length_list << endl;
-            }
 
             enter_unit_convert();
+
+            convert_upper_toupper();
+
+            if (convert_upper = "MM")
+            {
+                
+            }
+
+            }
 
     }
     else
