@@ -7,6 +7,7 @@ using namespace std;
 
 double temp;
 double weight;
+double length;
 char unit_select;
 char convert;
 
@@ -25,7 +26,7 @@ void input_weight()
 void input_lenght()
 {
     std::cout << "Enter lenght:" << " ";
-    cin >> weight;
+    cin >> lenght;
 }
 
 int main()
