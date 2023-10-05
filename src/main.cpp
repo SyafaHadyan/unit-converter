@@ -13,19 +13,19 @@ char convert;
 
 void input_temperature()
 {
-    std::cout << "Enter temperature:" << " ";
+    cout << "Enter temperature:" << " ";
     cin >> temp;
 }
 
 void input_weight()
 {
-    std::cout << "Enter weight:" << " ";
+    cout << "Enter weight:" << " ";
     cin >> weight;
 }
 
 void input_lenght()
 {
-    std::cout << "Enter lenght:" << " ";
+    cout << "Enter lenght:" << " ";
     cin >> lenght;
 }
 
@@ -53,14 +53,11 @@ int main()
         "(CM) Centimeter",
         "(M) Meter",
     }
-
-    do
-    {
+  
+    cout << "(T)" << " " << "Temperature" << "\n" << endl;
+    cout << "(W)" << " " << "Weight" << "\n" << endl;
     
-    std::cout << "(T)" << " " << "Temperature" << "\n" << endl;
-    std::cout << "(W)" << " " << "Weight" << "\n" << endl;
-    
-    std::cout << "Select unit:" << " ";
+    cout << "Select unit:" << " ";
 
     cin >> unit_select;
 
@@ -70,9 +67,9 @@ int main()
         {
             for (auto& temperature_list : temperature_units)
             {
-                std::cout << temperature_list << "\n" << endl;
+                cout << temperature_list << "\n" << endl;
             }
-            std::cout << "Enter Unit:" << " ";
+            cout << "Enter Unit:" << " ";
             cin >> convert;
 
             char convert_upper = toupper (convert);
@@ -81,32 +78,32 @@ int main()
             {
                 input_temperature();
 
-                std::cout << "Fahrenheit:" << " " << ((temp * 9)/5) + 32 << endl;
-                std::cout << "Kelvin:" << " " << temp + 273.15 << endl;
+                cout << "Fahrenheit:" << " " << ((temp * 9)/5) + 32 << endl;
+                cout << "Kelvin:" << " " << temp + 273.15 << endl;
             }
             else if (convert_upper == 'F')
             {
                 input_temperature();
 
-            	std::cout << "Celcius:" << " " << ((temp - 32)*5)/9 << endl;
-                std::cout << "Kelvin:" << " " << temp + 459.67 << endl;
+            	cout << "Celcius:" << " " << ((temp - 32)*5)/9 << endl;
+                cout << "Kelvin:" << " " << temp + 459.67 << endl;
             }
             else if (convert_upper == 'K')
             {
                 input_temperature();
 
-                std::cout << "Celcius:" << " " << (temp - 273.15) << endl;
-                std::cout << "Fahrenheit:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
+                cout << "Celcius:" << " " << (temp - 273.15) << endl;
+                cout << "Fahrenheit:" << " " << ((temp - 273.15)*9)/5 + 32 << endl;
             }
         }
         else if (unit_select == 'W')
         {
             for (auto& weight_list : weight_units)
             {
-                std::cout << weight_list << "\n" << endl;
+                cout << weight_list << "\n" << endl;
             }
 
-            std::cout << "Enter Unit:" << " ";
+            cout << "Enter Unit:" << " ";
             cin >> convert;
 
             char convert_upper = toupper (convert);
@@ -115,32 +112,32 @@ int main()
             {
                 input_weight();
 
-                std::cout << "Kilogram:" << " " << weight * 1000 << endl;
-                std::cout << "Miligram:" << " " << weight * 1000000 << endl;
-                std::cout << "Ounce:" << " " << weight * 0.03527396195 << endl;
-                std::cout << "Pound:" << " " << (weight / (1000)) * 2.2046 << endl;
+                cout << "Kilogram:" << " " << weight * 1000 << endl;
+                cout << "Miligram:" << " " << weight * 1000000 << endl;
+                cout << "Ounce:" << " " << weight * 0.03527396195 << endl;
+                cout << "Pound:" << " " << (weight / (1000)) * 2.2046 << endl;
             }
             else if (convert_upper == 'KG')
             {
                 input_weight();
 
-                std::cout << "Gram:" << " " << weight / (1000) << endl;
-                std::cout << "Miligram:" << " " << weight / (1000000) << endl;
-                std::cout << "Ounce:" << " " << weight / (0.03527396195) << endl;
-                std::cout << "Pound:" << " " << (weight / (1000)) * 2.2046 << endl;
+                cout << "Gram:" << " " << weight / (1000) << endl;
+                cout << "Miligram:" << " " << weight / (1000000) << endl;
+                cout << "Ounce:" << " " << weight / (0.03527396195) << endl;
+                cout << "Pound:" << " " << (weight / (1000)) * 2.2046 << endl;
             }
             else if (convert_upper == 'M')
             {
                 input_weight();
 
-                std::cout << "Gram:" << " " << weight * 1000 << endl;
-                std::cout << "Kilogram:" << " " << weight * 1000 << endl;
+                cout << "Gram:" << " " << weight * 1000 << endl;
+                cout << "Kilogram:" << " " << weight * 1000 << endl;
             }
         }
     }
     else
     {
-        std::cout << "\n" << "Invalid input" << "\n" << endl;
+        cout << "\n" << "Invalid input" << "\n" << endl;
     }
 
     }
