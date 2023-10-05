@@ -11,6 +11,12 @@ double length;
 char unit_select;
 char convert;
 
+void enter_unit_convert()
+(
+    cout << "Enter Unit:" << " ";
+    cin >> convert;
+)
+
 void input_temperature()
 {
     cout << "Enter temperature:" << " ";
@@ -62,7 +68,7 @@ int main()
 
     cin >> unit_select;
 
-    if (unit_select = 'T' || unit_select = 'W')
+    if (unit_select = 'T' || unit_select = 'W' || unit_select = 'L')
     {
         if (unit_select = 'T')
         {
@@ -135,12 +141,17 @@ int main()
                 cout << "Kilogram:" << " " << weight * 1000 << endl;
             }
         }
+        else if (unit_select = 'L')
+        }
+            for (auto& length_list : length_units)
+            {
+                cout << "Length: " << length_list << endl;
+            }
+
+            cout << Enter
     }
     else
     {
         cout << "\n" << "Invalid input" << "\n" << endl;
     }
-
-    }
-    while (true);
 }
