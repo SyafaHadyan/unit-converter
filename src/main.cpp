@@ -11,11 +11,16 @@ double length;
 char unit_select;
 char convert;
 
+void convert_upper()
+{
+    char convert_upper = toupper (convert);
+}
+
 void enter_unit_convert()
-(
+{
     cout << "Enter Unit:" << " ";
     cin >> convert;
-)
+}
 
 void input_temperature()
 {
@@ -76,8 +81,7 @@ int main()
             {
                 cout << temperature_list << "\n" << endl;
             }
-            cout << "Enter Unit:" << " ";
-            cin >> convert;
+            enter_unit_convert();
 
             char convert_upper = toupper (convert);
 
@@ -110,8 +114,7 @@ int main()
                 cout << weight_list << "\n" << endl;
             }
 
-            cout << "Enter Unit:" << " ";
-            cin >> convert;
+            enter_unit_convert();
 
             char convert_upper = toupper (convert);
 
@@ -148,7 +151,8 @@ int main()
                 cout << "Length: " << length_list << endl;
             }
 
-            cout << Enter
+            enter_unit_convert();
+
     }
     else
     {
