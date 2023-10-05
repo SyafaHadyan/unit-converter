@@ -56,6 +56,7 @@ int main()
   
     cout << "(T)" << " " << "Temperature" << "\n" << endl;
     cout << "(W)" << " " << "Weight" << "\n" << endl;
+    cout << "(L)" << " " << "Length" << "\n" << endl;
     
     cout << "Select unit:" << " ";
 
