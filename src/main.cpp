@@ -23,10 +23,10 @@ void input_weight()
     cin >> weight;
 }
 
-void input_lenght()
+void input_length()
 {
     cout << "Enter lenght:" << " ";
-    cin >> lenght;
+    cin >> length;
 }
 
 int main()
@@ -47,7 +47,7 @@ int main()
         "(lb) Pound"
     };
     
-    vector<string> lenght_units =
+    vector<string> length_units =
     {
         "(MM) Millimeter"
         "(CM) Centimeter",
