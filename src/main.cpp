@@ -7,6 +7,8 @@ using namespace std;
 
 double temp;
 double weight;
+char unit_select;
+char convert;
 
 void input_temperature()
 {
@@ -17,6 +19,12 @@ void input_temperature()
 void input_weight()
 {
     std::cout << "Enter weight:" << " ";
+    cin >> weight;
+}
+
+void input_lenght()
+{
+    std::cout << "Enter lenght:" << " ";
     cin >> weight;
 }
 
@@ -37,9 +45,6 @@ int main()
         "(OZ) Ounce",
         "(lb) Pound"
     };
-
-    string unit_select;
-    char convert;
     
     do
     {
@@ -48,11 +53,8 @@ int main()
     std::cout << "(W)" << " " << "Weight" << "\n" << endl;
     
     std::cout << "Select unit:" << " ";
-    cin >> unit_select;
-    getline(cin, unit_select);
 
-    transform(unit_select.begin(), unit_select.end(), unit_select.begin(),
-    [](unsigned char c){ return toupper(c); });
+    cin >> unit_select;
 
     if (unit_select = 'T' || unit_select = 'W')
     {
