@@ -191,10 +191,10 @@ int main()
                     input_length();
 
                     cout << "MM:" << " " << length / 10 << endl;
-                    cout << "M:" << " " << length * 10 << endl;
-                    cout << "KM:" << " " << length * 100000 << endl;
-                    cout << "IN:" << " " << length * 39.3700787 / 100 << endl;
-                    cout << "FT:" << " " << length * 3.2808399 / 100 << endl;
+                    cout << "M:" << " " << length / 10 << endl;
+                    cout << "KM:" << " " << length / 100000 << endl;
+                    cout << "IN:" << " " << length / 2.54 << endl;
+                    cout << "FT:" << " " << length / 30.48 << endl;
                 }
                 else if (convert == "M")
                 {
