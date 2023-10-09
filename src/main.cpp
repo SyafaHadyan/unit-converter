@@ -44,30 +44,30 @@ int main()
 {
     vector<string> temperature_units =
     {
-        "(C)" "Celcius",
-        "(F)" "Fahrenheit",
-        "(K)" "Kelvin"
+        "(C) Celcius",
+        "(F) Fahrenheit",
+        "(K) Kelvin"
     };
 
     vector<string> weight_units =
     {
-        "(G)" "Gram",
-        "(KG)" "Kilogram",
-        "(MG)" "Milligram",
-        "(OZ)" "Ounce",
-        "(lb)" "Pound",
-        "(TON)" "Ton",
-        "(ST)" "Stone"
+        "(G) Gram",
+        "(KG) Kilogram",
+        "(MG) Milligram",
+        "(OZ) Ounce",
+        "(lb) Pound",
+        "(TON) Ton",
+        "(ST) Stone"
     };
 
     vector<string> length_units =
     {
-        "(MM)" "Millimeter",
-        "(CM)" "Centimeter",
-        "(M)" "Meter",
-        "(KM)" "Kilometer", 
-        "(IN)" "Inch", 
-        "(FT)" "Foot"
+        "(MM) Millimeter",
+        "(CM) Centimeter",
+        "(M) Meter",
+        "(KM) Kilometer", 
+        "(IN) Inch", 
+        "(FT) Foot"
     };
 
     do {
