@@ -58,9 +58,6 @@ int main()
     {
         "(G) Gram",
         "(KG) Kilogram",
-        "(MG) Milligram",
-        "(OZ) Ounce",
-        "(lb) Pound",
         "(TON) Ton",
         "(ST) Stone"
     };
