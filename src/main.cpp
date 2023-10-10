@@ -9,9 +9,9 @@ double temp;
 double weight;
 double length;
 char unit_select;
-char convert;
+string convert;
 
-char convert_upper_toupper(char c)
+char convert_upper_toupper(string c)
 {
     return toupper(c);
 }
@@ -90,21 +90,21 @@ int main()
                 enter_unit_convert();
                 convert = convert_upper_toupper(convert);
 
-                if (convert == 'C')
+                if (convert == "C")
                 {
                     input_temperature();
 
                     cout << "Fahrenheit:" << " " << ((temp * 9) / 5) + 32 << endl;
                     cout << "Kelvin:" << " " << temp + 273.15 << endl;
                 }
-                else if (convert == 'F')
+                else if (convert == "F")
                 {
                     input_temperature();
 
                     cout << "Celcius:" << " " << ((temp - 32) * 5) / 9 << endl;
                     cout << "Kelvin:" << " " << temp + 459.67 << endl;
                 }
-                else if (convert == 'K')
+                else if (convert == "K")
                 {
                     input_temperature();
 
@@ -122,7 +122,7 @@ int main()
                 enter_unit_convert();
                 convert = convert_upper_toupper(convert);
 
-                if (convert == 'G')
+                if (convert == "G")
                 {
                     input_weight();
 
@@ -133,7 +133,7 @@ int main()
                     cout << "Ton:" << " " << (weight / 1000) * 0.00110231 << endl;
                     cout << "Stone:" << " " << (weight / 1000) * 0.157473 << endl;
                 }
-                else if (convert == 'KG')
+                else if (convert == "KG")
                 {
                     input_weight();
 
@@ -144,7 +144,7 @@ int main()
                     cout << "Ton:" << " " << (weight / 1000) * 0.00110231 << endl;
                     cout << "Stone:" << " " << (weight / 1000) * 0.157473 << endl;
                 }
-                else if (convert == 'TON')
+                else if (convert == "TON")
                 {
                     input_weight();
 
@@ -155,7 +155,7 @@ int main()
                     cout << "Pound:" << " " << weight / 0.0022046 << endl;
                     cout << "Stone:" << " " << weight / 0.157473 << endl;
                 }
-                else if (convert == 'ST')
+                else if (convert == "ST")
                 {
                     input_weight();
 
