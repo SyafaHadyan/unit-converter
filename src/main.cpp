@@ -209,14 +209,32 @@ int main()
                 else if (convert == "KM")
                 {
                     input_length();
+
+                    cout << "MM" << ":" << " " << length * 1000000 << endl;
+                    cout << "CM" << ":" << " " << length * 100000 << endl;
+                    cout << "M" << ":" << " " << length * 1000 << endl;
+                    cout << "IN" << ":" << " " << length / 0.0254 * 1000 << endl;
+                    cout << "FT" << ":" << " " << length / 0.3048 * 1000 << endl;
                 }
                 else if (convert == "IN")
                 {
                     input_length();
+
+                    cout << "MM" << ":" << " " << length * 25.4 << endl;
+                    cout << "CM" << ":" << " " << length * 2.54 << endl;
+                    cout << "M" << ":" << " " << length * 0.0254 << endl;
+                    cout << "KM" << ":" << " " << length / 1000 * 0.0254 << endl;
+                    cout << "FT" << ":" << " " << length / 12 << endl;
                 }
                 else if (convert == "FT")
                 {
                     input_length();
+
+                    cout << "MM" << ":" << " " << length * 304.8 << endl;
+                    cout << "CM" << ":" << " " << length * 30.48 << endl;
+                    cout << "M" << ":" << " " << length * 0.3048 << endl;
+                    cout << "KM" << ":" << " " << length / 1000 * 0.3048 << endl;
+                    cout << "IN" << ":" << " " << length * 12 << endl;
                 }
             }
         }
