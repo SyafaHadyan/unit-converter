@@ -54,10 +54,23 @@ int main()
         "(G) Gram",
         "(KG) Kilogram",
         "(MG) Milligram",
+        "(µG) Microgram",
+        "(NG) Nanogram",
+        "(PG) Picogram",
         "(OZ) Ounce",
-        "(lb) Pound",
-        "(TON) Ton",
-        "(ST) Stone"
+        "(LB) Pound",
+        "(ST) Stone",
+        "(US TON) Short Ton",
+        "(UK TON) Long Ton",
+        "(METRIC TON) Metric Ton",
+        "(CT) Carat",
+        "(TROY OZ) Troy Ounce",
+        "(TROY LB) Troy Pound",
+        "(DWT) Pennyweight",
+        "(GR) Grain",
+        "(CWT) Hundredweight",
+        "(QTR) Quarter",
+        "(KT) Kilotonne"
     };
 
     vector<string> length_units =
