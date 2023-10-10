@@ -56,8 +56,11 @@ int main()
 
     vector<string> weight_units =
     {
+        "(MG) Milligram",
         "(G) Gram",
         "(KG) Kilogram",
+        "(OZ) Ounce",
+        "(lb) Pound",
         "(TON) Ton",
         "(ST) Stone"
     };
@@ -135,13 +138,21 @@ int main()
                 enter_unit_convert();
                 convert[0] = toupper(convert[0]);
 
-                if (convert == "G")
+                if (convert == "MG")
                 {
                     input_weight();
 
                     newline();
-                    cout << "Kilogram" << ":" << " " << weight * 1000 << endl;
+                    cout <<
+                }
+                
+                else if (convert == "G")
+                {
+                    input_weight();
+
+                    newline();
                     cout << "Milligram" << ":" << " " << weight * 1000000 << endl;
+                    cout << "Kilogram" << ":" << " " << weight * 1000 << endl;
                     cout << "Ounce" << ":" << " " << weight * 0.03527396195 << endl;
                     cout << "Pound" << ":" << " " << (weight / 1000) * 2.2046 << endl;
                     cout << "Ton" << ":" << " " << (weight / 1000) * 0.00110231 << endl;
@@ -153,8 +164,8 @@ int main()
                     input_weight();
 
                     newline();
-                    cout << "Gram" << ":" << " " << weight / 1000 << endl;
                     cout << "Milligram" << ":" << " " << weight / 1000000 << endl;
+                    cout << "Gram" << ":" << " " << weight / 1000 << endl;
                     cout << "Ounce" << ":" << " " << weight / 0.03527396195 << endl;
                     cout << "Pound" << ":" << " " << (weight / 1000) * 2.2046 << endl;
                     cout << "Ton" << ":" << " " << (weight / 1000) * 0.00110231 << endl;
@@ -166,9 +177,9 @@ int main()
                     input_weight();
 
                     newline();
+                    cout << "Milligram" << ":" << " " << weight / 0.000000001 << endl;
                     cout << "Gram" << ":" << " " << weight / 0.000001 << endl;
                     cout << "Kilogram" << ":" << " " << weight / 0.00110231 << endl;
-                    cout << "Milligram" << ":" << " " << weight / 0.000000001 << endl;
                     cout << "Ounce" << ":" << " " << weight / 0.00003527396195 << endl;
                     cout << "Pound" << ":" << " " << weight / 0.0022046 << endl;
                     cout << "Stone" << ":" << " " << weight / 0.157473 << endl;
@@ -179,9 +190,9 @@ int main()
                     input_weight();
 
                     newline();
+                    cout << "Milligram" << ":" << " " << weight / 0.000000001 << endl;
                     cout << "Gram" << ":" << " " << weight / 0.000001 << endl;
                     cout << "Kilogram" << ":" << " " << weight / 0.00110231 << endl;
-                    cout << "Milligram" << ":" << " " << weight / 0.000000001 << endl;
                     cout << "Ounce" << ":" << " " << weight / 0.00003527396195 << endl;
                     cout << "Pound" << ":" << " " << weight / 0.0022046 << endl;
                     cout << "Ton" << ":" << " " << weight / 0.000157473 << endl;
