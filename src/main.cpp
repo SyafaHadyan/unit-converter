@@ -11,7 +11,7 @@ double length;
 char unit_select;
 string convert;
 
-char convert_upper_toupper(string c)
+char convert_upper_toupper(char c)
 {
     return toupper(c);
 }
@@ -88,7 +88,7 @@ int main()
                     }
 
                 enter_unit_convert();
-                convert = convert_upper_toupper(convert);
+                convert[0] = toupper(convert[0]);
 
                 if (convert == "C")
                 {
@@ -120,7 +120,7 @@ int main()
                 }
 
                 enter_unit_convert();
-                convert = convert_upper_toupper(convert);
+                convert[0] = toupper(convert[0]);
 
                 if (convert == "G")
                 {
@@ -174,7 +174,7 @@ int main()
                 }
 
                 enter_unit_convert();
-                convert = convert_upper_toupper(convert);
+                convert[0] = toupper(convert[0]);
 
                 if (convert == "MM")
                 {
