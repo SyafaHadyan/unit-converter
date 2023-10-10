@@ -70,8 +70,8 @@ int main()
         "(MM) Millimeter",
         "(CM) Centimeter",
         "(M) Meter",
-        "(KM) Kilometer", 
-        "(IN) Inch", 
+        "(KM) Kilometer",
+        "(IN) Inch",
         "(FT) Foot"
     };
 
