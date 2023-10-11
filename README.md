@@ -1,6 +1,6 @@
 # Unit Converter
 
-This is a unit converter that currently supports temperature conversions. More units such as distance, weight, and volume will be added soon.
+This is a unit converter that currently supports temperature, weight, and length conversion. More conversions will be added in the future.
 
 ## Usage
 
@@ -13,6 +13,25 @@ This is a unit converter that currently supports temperature conversions. More u
 
 ### Temperature
 
-- Celcius
-- Fahrenheit
-- Kelvin
+- (C) Celcius
+- (F) Fahrenheit
+- (K) Kelvin
+
+### Weight
+
+- (MG) Milligram
+- (G) Gram
+- (KG) Kilogram
+- (OZ) Ounce
+- (LB) Pound
+- (TON) Ton
+- (ST) Stone
+
+### Length
+
+- (MM) Millimeter
+- (CM) Centimeter
+- (M) Meter
+- (KM) Kilometer
+- (IN) Inch
+- (FT) Foot

@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+#include <cstring>
+#include <cstdlib>
+#include <cctype>
+#include <algorithm>
 #include <cmath>
 #include <vector>
 
@@ -11,25 +15,22 @@ double length;
 char unit_select;
 string convert;
 
-char convert_upper_toupper(char c)
-{
-    return toupper(c);
-}
-
 void newline()
 {
     cout << "\n" << endl;
 }
 
-void enter_unit_convert()
+void input_unit_convert()
 {
-    cout << "Enter Unit" << "" << ":" << " ";
+    cout << "Enter Unit" << ":" << " ";
     cin >> convert;
+
+    std::transform(convert.begin(), convert.end(), convert.begin(), ::toupper);
 }
 
 void input_temperature()
 {
-    cout << "Enter temperature" << "" << ":" << " ";
+    cout << "Enter temperature" << ":" << " ";
     cin >> temp;
 }
 
@@ -76,6 +77,7 @@ int main()
     };
 
     do {
+        cout << "\n" << endl;
         cout << "(T)" << " " << "Temperature" << "\n" << endl;
         cout << "(W)" << " " << "Weight" << "\n" << endl;
         cout << "(L)" << " " << "Length" << "\n" << endl;
@@ -97,8 +99,7 @@ int main()
                     cout << "\n" << temperature_list << "\n" << endl;
                     }
 
-                enter_unit_convert();
-                convert[0] = toupper(convert[0]);
+                input_unit_convert();
 
                 if (convert == "C")
                 {
@@ -107,7 +108,7 @@ int main()
                     newline();
                     cout << "Fahrenheit" << ":" << " " << ((temp * 9) / 5) + 32 << endl;
                     cout << "Kelvin" << ":" << " " << temp + 273.15 << endl;
-                    newline();
+                    
                 }
                 else if (convert == "F")
                 {
@@ -116,7 +117,6 @@ int main()
                     newline();
                     cout << "Celcius" << ":" << " " << ((temp - 32) * 5) / 9 << endl;
                     cout << "Kelvin" << ":" << " " << temp + 459.67 << endl;
-                    newline();
                 }
                 else if (convert == "K")
                 {
@@ -125,7 +125,6 @@ int main()
                     newline();
                     cout << "Celcius" << ":" << " " << (temp - 273.15) << endl;
                     cout << "Fahrenheit" << ":" << " " << ((temp - 273.15) * 9) / 5 + 32 << endl;
-                    newline();
                 }
             }
             else if (unit_select == 'W')
@@ -135,8 +134,7 @@ int main()
                     cout << "\n" << weight_list << "\n" << endl;
                 }
 
-                enter_unit_convert();
-                convert[0] = toupper(convert[0]);
+                input_unit_convert();
 
                 if (convert == "MG")
                 {
@@ -149,7 +147,6 @@ int main()
                     cout << "Pound" << ":" << " " << weight * 0.0000022046 << endl;
                     cout << "Ton" << ":" << " " << weight * 0.00000000110231 << endl;
                     cout << "Stone" << ":" << " " << weight * 0.000000157473 << endl;
-                    newline();
                 }
                 else if (convert == "G")
                 {
@@ -162,7 +159,18 @@ int main()
                     cout << "Pound" << ":" << " " << weight * 0.0022046 << endl;
                     cout << "Ton" << ":" << " " << weight * 0.00000110231 << endl;
                     cout << "Stone" << ":" << " " << weight * 0.000157473 << endl;
+                }
+                else if (convert == "KG")
+                {
+                    input_weight();
+
                     newline();
+                    cout << "Milligram" << ":" << " " << weight * 1000000 << endl;
+                    cout << "Gram" << ":" << " " << weight * 1000 << endl;
+                    cout << "Ounce" << ":" << " " << weight * 35.27396195 << endl;
+                    cout << "Pound" << ":" << " " << weight * 0.45359237 << endl;
+                    cout << "Ton" << ":" << " " << weight / 1000 << endl;
+                    cout << "Stone" << ":" << " " << weight * 0.071428579 << endl;
                 }
                 else if (convert == "OZ")
                 {
@@ -175,7 +183,6 @@ int main()
                     cout << "Pound" << ":" << " " << weight * 0.0625 << endl;
                     cout << "Ton" << ":" << " " << weight * 0.00003125 << endl;
                     cout << "Stone" << ":" << " " << weight * 0.00446429 << endl;
-                    newline();
                 }
                 else if (convert == "LB")
                 {
@@ -188,7 +195,6 @@ int main()
                     cout << "Ounce" << ":" << " " << weight * 16 << endl;
                     cout << "Ton" << ":" << " " << weight * 0.0005 << endl;
                     cout << "Stone" << ":" << " " << weight * 0.07142857 << endl;
-                    newline();
                 }
                 else if (convert == "TON")
                 {
@@ -201,7 +207,6 @@ int main()
                     cout << "Ounce" << ":" << " " << weight * 35273.96195 << endl;
                     cout << "Pound" << ":" << " " << weight * 2204.62262185 << endl;
                     cout << "Stone" << ":" << " " << weight * 157.473044 << endl;
-                    newline();
                 }
                 else if (convert == "ST")
                 {
@@ -214,17 +219,15 @@ int main()
                     cout << "Ounce" << ":" << " " << weight * 224 << endl;
                     cout << "Pound" << ":" << " " << weight * 0.157473044 << endl;
                     cout << "Ton" << ":" << " " << weight * 0.000157473044 << endl;
-                    newline();
                 }
             }
             else if (unit_select == 'L') {
                 for (auto& length_list : length_units)
                 {
-                    cout << "\n" << "Length: " << length_list << endl;
+                    cout << "\n" << length_list << endl;
                 }
 
-                enter_unit_convert();
-                convert[0] = toupper(convert[0]);
+                input_unit_convert();
 
                 if (convert == "MM")
                 {
@@ -236,7 +239,6 @@ int main()
                     cout << "KM" << ":" << " " << length / 1000000 << endl;
                     cout << "IN" << ":" << " " << length / 25.4 << endl;
                     cout << "FT" << ":" << " " << length / 304.8 << endl;
-                    newline();
                 }
                 else if (convert == "CM")
                 {
@@ -248,7 +250,6 @@ int main()
                     cout << "KM" << ":" << " " << length / 100000 << endl;
                     cout << "IN" << ":" << " " << length / 2.54 << endl;
                     cout << "FT" << ":" << " " << length / 30.48 << endl;
-                    newline();
                 }
                 else if (convert == "M")
                 {
@@ -260,7 +261,6 @@ int main()
                     cout << "KM" << ":" << " " << length / 1000 << endl;
                     cout << "IN" << ":" << " " << length / 0.0254 << endl;
                     cout << "FT" << ":" << " " << length / 0.3048 << endl;
-                    newline();
                 }
                 else if (convert == "KM")
                 {
@@ -272,7 +272,6 @@ int main()
                     cout << "M" << ":" << " " << length * 1000 << endl;
                     cout << "IN" << ":" << " " << length / 0.0254 * 1000 << endl;
                     cout << "FT" << ":" << " " << length / 0.3048 * 1000 << endl;
-                    newline();
                 }
                 else if (convert == "IN")
                 {
@@ -284,7 +283,6 @@ int main()
                     cout << "M" << ":" << " " << length * 0.0254 << endl;
                     cout << "KM" << ":" << " " << length / 1000 * 0.0254 << endl;
                     cout << "FT" << ":" << " " << length / 12 << endl;
-                    newline();
                 }
                 else if (convert == "FT")
                 {
@@ -296,7 +294,6 @@ int main()
                     cout << "M" << ":" << " " << length * 0.3048 << endl;
                     cout << "KM" << ":" << " " << length / 1000 * 0.3048 << endl;
                     cout << "IN" << ":" << " " << length * 12 << endl;
-                    newline();
                 }
             }
         }
