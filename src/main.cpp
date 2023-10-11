@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+#include <cstring>
+#include <cstdlib>
+#include <cctype>
+#include <algorithm>
 #include <cmath>
 #include <vector>
 
@@ -11,20 +15,17 @@ double length;
 char unit_select;
 string convert;
 
-char convert_upper_toupper(char c)
-{
-    return toupper(c);
-}
-
 void newline()
 {
     cout << "\n" << endl;
 }
 
-void enter_unit_convert()
+void input_unit_convert()
 {
-    cout << "Enter Unit" << "" << ":" << " ";
+    cout << "Enter Unit" << ":" << " ";
     cin >> convert;
+
+    std::transform(convert.begin(), convert.end(), convert.begin(), ::toupper);
 }
 
 void input_temperature()
@@ -97,8 +98,7 @@ int main()
                     cout << "\n" << temperature_list << "\n" << endl;
                     }
 
-                enter_unit_convert();
-                convert[0] = toupper(convert[0]);
+                input_unit_convert();
 
                 if (convert == "C")
                 {
@@ -135,8 +135,7 @@ int main()
                     cout << "\n" << weight_list << "\n" << endl;
                 }
 
-                enter_unit_convert();
-                convert[0] = toupper(convert[0]);
+                input_unit_convert();
 
                 if (convert == "MG")
                 {
@@ -223,8 +222,7 @@ int main()
                     cout << "\n" << "Length: " << length_list << endl;
                 }
 
-                enter_unit_convert();
-                convert[0] = toupper(convert[0]);
+                input_unit_convert();
 
                 if (convert == "MM")
                 {
