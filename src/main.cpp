@@ -160,6 +160,18 @@ int main()
                     cout << "Ton" << ":" << " " << weight * 0.00000110231 << endl;
                     cout << "Stone" << ":" << " " << weight * 0.000157473 << endl;
                 }
+                else if (convert == "KG")
+                {
+                    input_weight();
+
+                    newline();
+                    cout << "Milligram" << ":" << " " << weight * 1000000 << endl;
+                    cout << "Gram" << ":" << " " << weight * 1000 << endl;
+                    cout << "Ounce" << ":" << " " << weight * 35.27396195 << endl;
+                    cout << "Pound" << ":" << " " << weight * 0.45359237 << endl;
+                    cout << "Ton" << ":" << " " << weight / 1000 << endl;
+                    cout << "Stone" << ":" << " " << weight * 0.071428579 << endl;
+                }
                 else if (convert == "OZ")
                 {
                     input_weight();
