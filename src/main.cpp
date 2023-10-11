@@ -77,6 +77,7 @@ int main()
     };
 
     do {
+        cout << "\n" << endl;
         cout << "(T)" << " " << "Temperature" << "\n" << endl;
         cout << "(W)" << " " << "Weight" << "\n" << endl;
         cout << "(L)" << " " << "Length" << "\n" << endl;
