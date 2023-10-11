@@ -1,6 +1,6 @@
 # Unit Converter
 
-This is a unit converter that currently supports temperature conversions. More units such as distance, weight, and volume will be added soon.
+This is a unit converter that currently supports temperature, weight, and length conversion. More conversions will be added in the future.
 
 ## Usage
 
