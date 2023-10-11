@@ -18,3 +18,11 @@ This is a unit converter that currently supports temperature conversions. More u
 - (K) Kelvin
 
 ### Weight
+
+- (MG) Milligram
+- (G) Gram
+- (KG) Kilogram
+- (OZ) Ounce
+- (LB) Pound
+- (TON) Ton
+- (ST) Stone
