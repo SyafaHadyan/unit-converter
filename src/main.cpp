@@ -30,7 +30,7 @@ void input_unit_convert()
 
 void input_temperature()
 {
-    cout << "Enter temperature" << "" << ":" << " ";
+    cout << "Enter temperature" << ":" << " ";
     cin >> temp;
 }
 
