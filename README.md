@@ -13,6 +13,8 @@ This is a unit converter that currently supports temperature conversions. More u
 
 ### Temperature
 
-- Celcius
-- Fahrenheit
-- Kelvin
+- (C) Celcius
+- (F) Fahrenheit
+- (K) Kelvin
+
+### Weight
