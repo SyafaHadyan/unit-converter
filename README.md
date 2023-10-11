@@ -26,3 +26,12 @@ This is a unit converter that currently supports temperature conversions. More u
 - (LB) Pound
 - (TON) Ton
 - (ST) Stone
+
+### Length
+
+- (MM) Millimeter
+- (CM) Centimeter
+- (M) Meter
+- (KM) Kilometer
+- (IN) Inch
+- (FT) Foot
