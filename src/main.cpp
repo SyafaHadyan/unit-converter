@@ -212,7 +212,7 @@ int main()
             else if (unit_select == 'L') {
                 for (auto& length_list : length_units)
                 {
-                    cout << "\n" << "Length: " << length_list << endl;
+                    cout << "\n" << length_list << endl;
                 }
 
                 input_unit_convert();
