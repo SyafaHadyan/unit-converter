@@ -374,6 +374,13 @@ int main()
                     input_length();
 
                     newline();
+                    cout << "ANG" << ":" << " " << length * 100000000 << endl;
+                    cout << "DM" << ":" << " " << length / 10 << endl;
+                    cout << "M" << ":" << " " << length / 100 << endl;
+                    cout << "KM" << ":" << " " << length / 100000 << endl;
+                    cout << "IN" << ":" << " " << length / 2.54 << endl;
+                    cout << "FT" << ":" << " " << length / 30.48 << endl;
+                    cout << "MI" << ":" << " " << length / 160934 << endl;
                     cout << "MM" << ":" << " " << length * 10 << endl;
                     cout << "M" << ":" << " " << length / 100 << endl;
                     cout << "KM" << ":" << " " << length / 100000 << endl;
