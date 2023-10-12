@@ -76,10 +76,8 @@ int main()
     vector<string> length_units =
     {
         "(ANG) Angstrom",
-        "(CH) Chain",
         "(CM) Centimeter",
         "(DM) Decimeter",
-        "(FATH) Fathom",
         "(FT) Foot",
         "(FUR) Furlong",
         "(H) Hand",
@@ -93,7 +91,6 @@ int main()
         "(PER) Perch",
         "(POLE) Pole",
         "(ROD) Rod",
-        "(THOU) Thou",
         "(YD) Yard"
     };
 
