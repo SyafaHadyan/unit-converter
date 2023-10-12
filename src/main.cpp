@@ -57,22 +57,22 @@ int main()
 
     vector<string> weight_units =
     {
-    "(CT) Carat",
-    "(DWT) Pennyweight",
-    "(G) Gram",
-    "(GR) Grain",
-    "(HWT) Hundredweight",
-    "(KG) Kilogram",
-    "(LB) Pound",
-    "(LT) Long Ton",
-    "(MG) Milligram",
-    "(MT) Metric Ton",
-    "(OZ) Ounce",
-    "(ST) Stone",
-    "(TL) Troy Ounce",
-    "(TON) Ton"
+        "(CT) Carat",
+        "(DWT) Pennyweight",
+        "(G) Gram",
+        "(GR) Grain",
+        "(HWT) Hundredweight",
+        "(KG) Kilogram",
+        "(LB) Pound",
+        "(LT) Long Ton",
+        "(MG) Milligram",
+        "(MT) Metric Ton",
+        "(OZ) Ounce",
+        "(ST) Stone",
+        "(TL) Troy Ounce",
+        "(TON) Ton"
     };
-    
+
     vector<string> length_units =
     {
         "(MM) Millimeter",
