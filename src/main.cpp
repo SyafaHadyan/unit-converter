@@ -352,22 +352,22 @@ int main()
                     input_length();
 
                     newline();
-                    cout << "MM" << ":" << " " << length / 10000000 << endl;
-                    cout << "CM" << ":" << " " << length / 100000000 << endl;
-                    cout << "DM" << ":" << " " << length / 1000000000 << endl;
-                    cout << "M" << ":" << " " << length / 10000000000 << endl;
-                    cout << "IN" << ":" << " " << length / 254000 << endl;
-                    cout << "FT" << ":" << " " << length / 3048000 << endl;
-                    cout << "FUR" << ":" << " " << length / 201168000 << endl;
-                    cout << "CH" << ":" << " " << length / 201168 << endl;
-                    cout << "LINK" << ":" << " " << length / 2011680 << endl;
-                    cout << "ROD" << ":" << " " << length / 804672 << endl;
-                    cout << "FATH" << ":" << " " << length / 1828800 << endl;
-                    cout << "PER" << ":" << " " << length / 20116800 << endl;
-                    cout << "POLE" << ":" << " " << length / 502920 << endl;
-                    cout << "H" << ":" << " " << length / 114300 << endl;
-                    cout << "THOU" << ":" << " " << length / 254 << endl;
-                    cout << "YD" << ":" << " " << length / 914400 << endl;
+                    cout << "(MM) Millimeter" << ":" << " " << length / 10000000 << endl;
+                    cout << "(CM) Centimeter" << ":" << " " << length / 100000000 << endl;
+                    cout << "(DM) Decimeter" << ":" << " " << length / 1000000000 << endl;
+                    cout << "(M) Meter" << ":" << " " << length / 10000000000 << endl;
+                    cout << "(IN) Inch" << ":" << " " << length / 254000 << endl;
+                    cout << "(FT) Foot" << ":" << " " << length / 3048000 << endl;
+                    cout << "(FUR) Furlong" << ":" << " " << length / 201168000 << endl;
+                    cout << "(CH) Chain" << ":" << " " << length / 201168 << endl;
+                    cout << "(LINK) Link" << ":" << " " << length / 2011680 << endl;
+                    cout << "(ROD) Rod" << ":" << " " << length / 804672 << endl;
+                    cout << "(FATH) Fathom" << ":" << " " << length / 1828800 << endl;
+                    cout << "(PER) Perch" << ":" << " " << length / 20116800 << endl;
+                    cout << "(POLE) Pole" << ":" << " " << length / 502920 << endl;
+                    cout << "(H) Hand" << ":" << " " << length / 114300 << endl;
+                    cout << "(THOU) Thou" << ":" << " " << length / 254 << endl;
+                    cout << "(YD) Yard" << ":" << " " << length / 914400 << endl;
                 }
                 else if (convert == "CM")
                 {
