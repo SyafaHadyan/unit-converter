@@ -93,7 +93,7 @@ int main()
         "(ROD) Rod",
         "(YD) Yard"
     };
-    
+
     do {
         cout << "\n" << endl;
         cout << "(T)" << " " << "Temperature" << "\n" << endl;
@@ -349,27 +349,25 @@ int main()
                     input_length();
 
                     newline();
-
-                    cout << "ANG" << ":" << " " << length << endl;
-                    cout << "CM" << ":" << " " << length * 0.00000001 << endl;
-                    cout << "DM" << ":" << " " << length * 0.000000001 << endl;
-                    cout << "M" << ":" << " " << length * 0.0000000001 << endl;
-                    cout << "KM" << ":" << " " << length * 0.0000000000001 << endl;
-                    cout << "IN" << ":" << " " << length * 0.000000003937 << endl;
-                    cout << "FT" << ":" << " " << length * 0.000000000328 << endl;
-                    cout << "MI" << ":" << " " << length * 0.0000000000000621371192 << endl;
-                    cout << "MM" << ":" << " " << length * 0.0000001 << endl;
-                    cout << "NM" << ":" << " " << length * 0.0000000000000541148236 << endl;
-                    cout << "YD" << ":" << " " << length * 0.000000000109 << endl;
-                    cout << "FUR" << ":" << " " << length * 0.000000000000000621371192 << endl;
-                    cout << "CH" << ":" << " " << length * 0.00000000000000621371192 << endl;
-                    cout << "LINK" << ":" << " " << length * 0.0000000000000621371192 << endl;
-                    cout << "ROD" << ":" << " " << length * 0.0000000000000248548477 << endl;
-                    cout << "FATH" << ":" << " " << length * 0.000000000000000546806649 << endl;
-                    cout << "PER" << ":" << " " << length * 0.00000000000000000621371192 << endl;
-                    cout << "POLE" << ":" << " " << length * 0.0000000000000000248548477 << endl;
-                    cout << "H" << ":" << " " << length * 0.00000000000000000546806649 << endl;
-                    cout << "THOU" << ":" << " " << length * 0.00000003937 << endl;
+                    cout << "CM" << ":" << " " << length / 10000000 << endl;
+                    cout << "CH" << ":" << " " << length / 20116800000 << endl;
+                    cout << "DM" << ":" << " " << length / 100000000 << endl;
+                    cout << "FATH" << ":" << " " << length / 18288000000 << endl;
+                    cout << "FT" << ":" << " " << length / 3048000000 << endl;
+                    cout << "FUR" << ":" << " " << length / 2011680000000 << endl;
+                    cout << "H" << ":" << " " << length / 1143000000 << endl;
+                    cout << "IN" << ":" << " " << length / 254000000 << endl;
+                    cout << "KM" << ":" << " " << length / 100000000000 << endl;
+                    cout << "LINK" << ":" << " " << length / 2011680000 << endl;
+                    cout << "M" << ":" << " " << length / 1000000000 << endl;
+                    cout << "MI" << ":" << " " << length / 160934400000 << endl;
+                    cout << "MM" << ":" << " " << length / 1000000 << endl;
+                    cout << "NM" << ":" << " " << length / 18520000000 << endl;
+                    cout << "PER" << ":" << " " << length / 201168000000 << endl;
+                    cout << "POLE" << ":" << " " << length / 5029200000 << endl;
+                    cout << "ROD" << ":" << " " << length / 8046720000 << endl;
+                    cout << "THOU" << ":" << " " << length / 254000000 << endl;
+                    cout << "YD" << ":" << " " << length / 9144000000 << endl;
                 }
                 else if (convert == "CM")
                 {
