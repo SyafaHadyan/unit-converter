@@ -347,16 +347,27 @@ int main()
 
                 input_unit_convert();
 
-                if (convert == "MM")
+                if (convert == "ANG")
                 {
                     input_length();
 
                     newline();
-                    cout << "CM" << ":" << " " << length / 10 << endl;
-                    cout << "M" << ":" << " " << length / 1000 << endl;
-                    cout << "KM" << ":" << " " << length / 1000000 << endl;
-                    cout << "IN" << ":" << " " << length / 25.4 << endl;
-                    cout << "FT" << ":" << " " << length / 304.8 << endl;
+                    cout << "MM" << ":" << " " << length / 10000000 << endl;
+                    cout << "CM" << ":" << " " << length / 100000000 << endl;
+                    cout << "DM" << ":" << " " << length / 1000000000 << endl;
+                    cout << "M" << ":" << " " << length / 10000000000 << endl;
+                    cout << "IN" << ":" << " " << length / 254000 << endl;
+                    cout << "FT" << ":" << " " << length / 3048000 << endl;
+                    cout << "FUR" << ":" << " " << length / 201168000 << endl;
+                    cout << "CH" << ":" << " " << length / 201168 << endl;
+                    cout << "LINK" << ":" << " " << length / 2011680 << endl;
+                    cout << "ROD" << ":" << " " << length / 804672 << endl;
+                    cout << "FATH" << ":" << " " << length / 1828800 << endl;
+                    cout << "PER" << ":" << " " << length / 20116800 << endl;
+                    cout << "POLE" << ":" << " " << length / 502920 << endl;
+                    cout << "H" << ":" << " " << length / 114300 << endl;
+                    cout << "THOU" << ":" << " " << length / 254 << endl;
+                    cout << "YD" << ":" << " " << length / 914400 << endl;
                 }
                 else if (convert == "CM")
                 {
@@ -369,49 +380,208 @@ int main()
                     cout << "IN" << ":" << " " << length / 2.54 << endl;
                     cout << "FT" << ":" << " " << length / 30.48 << endl;
                 }
-                else if (convert == "M")
+                else if (convert == "DM")
                 {
                     input_length();
 
                     newline();
-                    cout << "MM" << ":" << " " << length * 1000 << endl;
-                    cout << "CM" << ":" << " " << length * 100 << endl;
-                    cout << "KM" << ":" << " " << length / 1000 << endl;
-                    cout << "IN" << ":" << " " << length / 0.0254 << endl;
-                    cout << "FT" << ":" << " " << length / 0.3048 << endl;
-                }
-                else if (convert == "KM")
-                {
-                    input_length();
-
-                    newline();
-                    cout << "MM" << ":" << " " << length * 1000000 << endl;
-                    cout << "CM" << ":" << " " << length * 100000 << endl;
-                    cout << "M" << ":" << " " << length * 1000 << endl;
-                    cout << "IN" << ":" << " " << length / 0.0254 * 1000 << endl;
-                    cout << "FT" << ":" << " " << length / 0.3048 * 1000 << endl;
-                }
-                else if (convert == "IN")
-                {
-                    input_length();
-
-                    newline();
-                    cout << "MM" << ":" << " " << length * 25.4 << endl;
-                    cout << "CM" << ":" << " " << length * 2.54 << endl;
-                    cout << "M" << ":" << " " << length * 0.0254 << endl;
-                    cout << "KM" << ":" << " " << length / 1000 * 0.0254 << endl;
-                    cout << "FT" << ":" << " " << length / 12 << endl;
+                    cout << "ANG" << ":" << " " << length * 1000000000 << endl;
+                    cout << "M" << ":" << " " << length / 10 << endl;
+                    cout << "KM" << ":" << " " << length / 10000 << endl;
+                    cout << "IN" << ":" << " " << length / 0.254 << endl;
+                    cout << "FT" << ":" << " " << length / 3.048 << endl;
                 }
                 else if (convert == "FT")
                 {
                     input_length();
 
                     newline();
-                    cout << "MM" << ":" << " " << length * 304.8 << endl;
+                    cout << "ANG" << ":" << " " << length * 3048000 << endl;
                     cout << "CM" << ":" << " " << length * 30.48 << endl;
-                    cout << "M" << ":" << " " << length * 0.3048 << endl;
-                    cout << "KM" << ":" << " " << length / 1000 * 0.3048 << endl;
+                    cout << "DM" << ":" << " " << length * 3.048 << endl;
+                    cout << "M" << ":" << " " << length / 3.281 << endl;
+                    cout << "KM" << ":" << " " << length / 3281 << endl;
                     cout << "IN" << ":" << " " << length * 12 << endl;
+                    cout << "MI" << ":" << " " << length / 5280 << endl;
+                    cout << "MM" << ":" << " " << length * 304.8 << endl;
+                    cout << "NM" << ":" << " " << length / 1852 << endl;
+                    cout << "YD" << ":" << " " << length / 3 << endl;
+                }
+                else if (convert == "FUR")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 201168000 << endl;
+                    cout << "M" << ":" << " " << length / 201.168 << endl;
+                    cout << "KM" << ":" << " " << length / 201168 << endl;
+                    cout << "IN" << ":" << " " << length * 7920 << endl;
+                    cout << "FT" << ":" << " " << length * 660 << endl;
+                }
+                else if (convert == "H")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 114300 << endl;
+                    cout << "M" << ":" << " " << length / 109.361 << endl;
+                    cout << "KM" << ":" << " " << length / 109361 << endl;
+                    cout << "IN" << ":" << " " << length * 4494.49 << endl;
+                    cout << "FT" << ":" << " " << length * 374.54 << endl;
+                }
+                else if (convert == "IN")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 25400 << endl;
+                    cout << "CM" << ":" << " " << length * 2.54 << endl;
+                    cout << "DM" << ":" << " " << length * 0.254 << endl;
+                    cout << "M" << ":" << " " << length / 39.37 << endl;
+                    cout << "KM" << ":" << " " << length / 39370 << endl;
+                    cout << "FT" << ":" << " " << length / 12 << endl;
+                    cout << "MI" << ":" << " " << length / 63360 << endl;
+                    cout << "MM" << ":" << " " << length * 25.4 << endl;
+                    cout << "NM" << ":" << " " << length / 185200 << endl;
+                    cout << "YD" << ":" << " " << length / 36 << endl;
+                }
+                else if (convert == "KM")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 1000000000 << endl;
+                    cout << "CM" << ":" << " " << length * 100000 << endl;
+                    cout << "DM" << ":" << " " << length * 10000 << endl;
+                    cout << "M" << ":" << " " << length * 1000 << endl;
+                    cout << "IN" << ":" << " " << length * 39370.1 << endl;
+                    cout << "FT" << ":" << " " << length * 3280.84 << endl;
+                    cout << "MI" << ":" << " " << length / 1.609 << endl;
+                    cout << "MM" << ":" << " " << length * 1000000 << endl;
+                    cout << "NM" << ":" << " " << length / 1.852 << endl;
+                    cout << "YD" << ":" << " " << length * 1093.61 << endl;
+                }
+                else if (convert == "LINK")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 2011680 << endl;
+                    cout << "M" << ":" << " " << length / 4.972 << endl;
+                    cout << "KM" << ":" << " " << length / 4972 << endl;
+                    cout << "IN" << ":" << " " << length * 7.92 << endl;
+                    cout << "FT" << ":" << " " << length * 0.66 << endl;
+                }
+                else if (convert == "M")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 10000000000 << endl;
+                    cout << "CM" << ":" << " " << length * 100 << endl;
+                    cout << "DM" << ":" << " " << length * 10 << endl;
+                    cout << "KM" << ":" << " " << length / 1000 << endl;
+                    cout << "IN" << ":" << " " << length * 39.37 << endl;
+                    cout << "FT" << ":" << " " << length * 3.281 << endl;
+                    cout << "MI" << ":" << " " << length / 1609.34 << endl;
+                    cout << "MM" << ":" << " " << length * 1000 << endl;
+                    cout << "NM" << ":" << " " << length / 1852 << endl;
+                    cout << "YD" << ":" << " " << length * 1.094 << endl;
+                }
+                else if (convert == "MI")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 16093440000 << endl;
+                    cout << "M" << ":" << " " << length * 1609.34 << endl;
+                    cout << "KM" << ":" << " " << length * 1.609 << endl;
+                    cout << "IN" << ":" << " " << length * 63360 << endl;
+                    cout << "FT" << ":" << " " << length * 5280 << endl;
+                }
+                else if (convert == "MM")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 10000000 << endl;
+                    cout << "CM" << ":" << " " << length / 10 << endl;
+                    cout << "DM" << ":" << " " << length / 100 << endl;
+                    cout << "M" << ":" << " " << length / 1000 << endl;
+                    cout << "IN" << ":" << " " << length / 25.4 << endl;
+                    cout << "FT" << ":" << " " << length / 304.8 << endl;
+                    cout << "FUR" << ":" << " " << length / 2011680000 << endl;
+                    cout << "CH" << ":" << " " << length / 20116800 << endl;
+                    cout << "LINK" << ":" << " " << length / 2011680 << endl;
+                    cout << "ROD" << ":" << " " << length / 8046720 << endl;
+                    cout << "FATH" << ":" << " " << length / 18288000 << endl;
+                    cout << "PER" << ":" << " " << length / 201168000 << endl;
+                    cout << "POLE" << ":" << " " << length / 5029200 << endl;
+                    cout << "H" << ":" << " " << length / 1143000 << endl;
+                    cout << "THOU" << ":" << " " << length / 25.4 << endl;
+                    cout << "YD" << ":" << " " << length / 914.4 << endl;
+                }
+                else if (convert == "NM")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 185200000 << endl;
+                    cout << "FT" << ":" << " " << length * 6076.12 << endl;
+                    cout << "KM" << ":" << " " << length * 1.852 << endl;
+                    cout << "IN" << ":" << " " << length * 72913.4 << endl;
+                    cout << "M" << ":" << " " << length / 1852 << endl;
+                    cout << "MI" << ":" << " " << length / 1.151 << endl;
+                    cout << "MM" << ":" << " " << length * 1852000 << endl;
+                    cout << "YD" << ":" << " " << length * 2025.37 << endl;
+                }
+                else if (convert == "PER")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 20116800 << endl;
+                    cout << "M" << ":" << " " << length / 5.0292 << endl;
+                    cout << "KM" << ":" << " " << length / 5029.2 << endl;
+                    cout << "IN" << ":" << " " << length * 19.8 << endl;
+                    cout << "FT" << ":" << " " << length * 1.65 << endl;
+                }
+                else if (convert == "POLE")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 502920 << endl;
+                    cout << "M" << ":" << " " << length / 0.19884 << endl;
+                    cout << "KM" << ":" << " " << length / 198.84 << endl;
+                    cout << "IN" << ":" << " " << length * 792 << endl;
+                    cout << "FT" << ":" << " " << length * 66 << endl;
+                }
+                else if (convert == "ROD")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 8046720 << endl;
+                    cout << "M" << ":" << " " << length / 3.048 << endl;
+                    cout << "KM" << ":" << " " << length / 304.8 << endl;
+                    cout << "IN" << ":" << " " << length * 198 << endl;
+                    cout << "FT" << ":" << " " << length * 16.5 << endl;
+                }
+                else if (convert == "YD")
+                {
+                    input_length();
+
+                    newline();
+                    cout << "ANG" << ":" << " " << length * 9144000 << endl;
+                    cout << "CM" << ":" << " " << length * 91.44 << endl;
+                    cout << "DM" << ":" << " " << length * 9.144 << endl;
+                    cout << "M" << ":" << " " << length / 1.094 << endl;
+                    cout << "IN" << ":" << " " << length * 36 << endl;
+                    cout << "FT" << ":" << " " << length * 3 << endl;
+                    cout << "MI" << ":" << " " << length / 1760 << endl;
+                    cout << "MM" << ":" << " " << length * 914.4 << endl;
+                    cout << "NM" << ":" << " " << length / 2025.37 << endl;
                 }
             }
         }
