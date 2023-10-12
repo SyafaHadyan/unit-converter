@@ -57,20 +57,20 @@ int main()
 
     vector<string> weight_units =
     {
-        "(CT) Carat",
-        "(DWT) Pennyweight",
-        "(G) Gram",
-        "(GR) Grain",
-        "(HWT) Hundredweight",
-        "(KG) Kilogram",
-        "(LB) Pound",
-        "(LT) Long Ton",
-        "(MG) Milligram",
-        "(MT) Metric Ton",
-        "(OZ) Ounce",
-        "(ST) Stone",
-        "(TL) Troy Ounce",
-        "(TON) Ton"
+    "(CT) Carat",
+    "(DWT) Pennyweight",
+    "(G) Gram",
+    "(GR) Grain",
+    "(HWT) Hundredweight",
+    "(KG) Kilogram",
+    "(LB) Pound",
+    "(LT) Long Ton",
+    "(MG) Milligram",
+    "(MT) Metric Ton",
+    "(OZ) Ounce",
+    "(ST) Stone",
+    "(TL) Troy Ounce",
+    "(TON) Ton"
     };
 
     vector<string> length_units =
@@ -148,6 +148,7 @@ int main()
                     input_weight();
 
                     newline();
+
                     cout << "Gram" << ":" << " " << weight * 0.2 << endl;
                     cout << "Ounce" << ":" << " " << weight * 0.00705479239 << endl;
                     cout << "Pound" << ":" << " " << weight * 0.000440924524 << endl;
