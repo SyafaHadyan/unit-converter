@@ -564,7 +564,7 @@ int main()
         {
             cout << "\n" << "Invalid input" << "\n" << endl;
         }
-    } while (true);
+    } while (unit_select != 'Q');
 
     return 0;
 }
