@@ -216,6 +216,29 @@ int main()
                 else if (convert == "DG")
                 {
                     input_weight();
+
+                    newline();
+
+                    cout << "Milligram" << ":" << " " << weight * 100 << endl;
+                    cout << "Centigram" << ":" << " " << weight * 10 << endl;
+                    cout << "Gram" << ":" << " " << weight * 0.1 << endl;
+                    cout << "Dekagram" << ":" << " " << weight * 0.01 << endl;
+                    cout << "Hectogram" << ":" << " " << weight * 0.001 << endl;
+                    cout << "Kilogram" << ":" << " " << weight * 0.0001 << endl;
+                    cout << "Metric Ton" << ":" << " " << weight * 1e-7 << endl;
+                    cout << "Grain" << ":" << " " << weight * 1.54323584 << endl;
+                    cout << "Dram" << ":" << " " << weight * 0.0564383391 << endl;
+                    cout << "Ounce" << ":" << " " << weight * 0.00352739619 << endl;
+                    cout << "Pound" << ":" << " " << weight * 0.000220462262 << endl;
+                    cout << "Short Hundredweight" << ":" << " " << weight * 2.20462262e-5 << endl;
+                    cout << "Long Hundredweight" << ":" << " " << weight * 1.96841306e-5 << endl;
+                    cout << "Short Ton" << ":" << " " << weight * 1.10231131e-7 << endl;
+                    cout << "Long Ton" << ":" << " " << weight * 9.84206528e-8 << endl;
+                    cout << "Apothecaries' Scruple" << ":" << " " << weight * 0.000771617917 << endl;
+                    cout << "Pennyweight" << ":" << " " << weight * 0.0154323584 << endl;
+                    cout << "Apothecaries' Dram" << ":" << " " << weight * 0.0564383391 << endl;
+                    cout << "Apothecaries' Ounce" << ":" << " " << weight * 0.00352739619 << endl;
+                    cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 0.000220462262 << endl;
                 }
 
             }
