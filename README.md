@@ -19,26 +19,32 @@ This is a unit converter that currently supports temperature, weight, and length
 
 ### Weight
 
-- "(CT) Carat",
-- "(DWT) Pennyweight",
-- "(G) Gram",
-- "(GR) Grain",
-- "(HWT) Hundredweight",
-- "(KG) Kilogram",
-- "(LB) Pound",
-- "(LT) Long Ton",
-- "(MG) Milligram",
-- "(MT) Metric Ton",
-- "(OZ) Ounce",
-- "(ST) Stone",
-- "(TL) Troy Ounce",
-- "(TON) Ton"
+- (CT) Carat,
+- (DWT) Pennyweight,
+- (G) Gram,
+- (GR) Grain,
+- (HWT) Hundredweight,
+- (KG) Kilogram,
+- (LB) Pound,
+- (LT) Long Ton,
+- (MG) Milligram,
+- (MT) Metric Ton,
+- (OZ) Ounce,
+- (ST) Stone,
+- (TL) Troy Ounce,
+- (TON) Ton
 
 ### Length
 
-- (MM) Millimeter
-- (CM) Centimeter
-- (M) Meter
-- (KM) Kilometer
-- (IN) Inch
-- (FT) Foot
+- (M) Meter",
+- (KM) Kilometer",
+- (CM) Centimeter",
+- (MM) Millimeter",
+- (MC) Micrometer",
+- (NM) Nanometer",
+- (MI) Mile",
+- (YD) Yard",
+- (FT) Foot",
+- (IN) Inch"
+- (NAUT) Nautical Mile"
+- (LIGHT) Light Year"
