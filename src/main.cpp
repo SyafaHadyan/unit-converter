@@ -159,186 +159,34 @@ int main()
 
                 input_unit_convert();
 
-                if (convert == "CT")
+                if (convert == "MG")
                 {
-                    input_weight();
+                    input_length();
 
                     newline();
 
-                    cout << "Carat" << ":" << " " << weight << endl;
-                    cout << "Grain" << ":" << " " << weight * 3.08647167 << endl;
-                    cout << "Gram" << ":" << " " << weight * 0.2 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 0.00705479239 << endl;
-                    cout << "Pennyweight" << ":" << " " << weight * 0.128602905 << endl;
-                    cout << "Pound" << ":" << " " << weight * 0.000440924524 << endl;
-                }
-                else if (convert == "DWT")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "DWT" << ":" << " " << weight << endl;
-                    cout << "Grain" << ":" << " " << weight * 24 << endl;
-                    cout << "Gram" << ":" << " " << weight * 1.55517384 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 0.0548571429 << endl;
-                    cout << "Pennyweight" << ":" << " " << weight * 1.15740741 << endl;
-                    cout << "Pound" << ":" << " " << weight * 0.00342857143 << endl;
-                }
-                else if (convert == "G")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Gram" << ":" << " " << weight << endl;
-                    cout << "Kilogram" << ":" << " " << weight * 0.001 << endl;
-                    cout << "Long Ton" << ":" << " " << weight * 0.000984206527 << endl;
-                    cout << "Metric Ton" << ":" << " " << weight * 0.000001 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 0.0352739619 << endl;
-                    cout << "Pound" << ":" << " " << weight * 0.00220462262 << endl;
-                    cout << "Short Ton" << ":" << " " << weight * 0.000110231131 << endl;
-                }
-                else if (convert == "GR")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Carat" << ":" << " " << weight * 5 << endl;
-                    cout << "Grain" << ":" << " " << weight << endl;
-                    cout << "Gram" << ":" << " " << weight * 0.06479891 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 0.00228571429 << endl;
-                    cout << "Pennyweight" << ":" << " " << weight * 1.15740741 << endl;
-                    cout << "Pound" << ":" << " " << weight * 0.000142857143 << endl;
-                }
-                else if (convert == "HWT")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Hundredweight" << ":" << " " << weight << endl;
-                    cout << "Kilogram" << ":" << " " << weight * 0.05 << endl;
-                    cout << "Long Ton" << ":" << " " << weight * 0.0000497105 << endl;
-                    cout << "Metric Ton" << ":" << " " << weight * 0.00005 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 141.747616 << endl;
-                    cout << "Pound" << ":" << " " << weight * 0.0984206527 << endl;
-                    cout << "Short Ton" << ":" << " " << weight * 0.0000551156 << endl;
-                }
-                else if (convert == "KG")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Gram" << ":" << " " << weight * 1000 << endl;
-                    cout << "Kilogram" << ":" << " " << weight << endl;
-                    cout << "Long Ton" << ":" << " " << weight * 0.000984206527 << endl;
-                    cout << "Metric Ton" << ":" << " " << weight * 0.001 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 35.2739619 << endl;
-                    cout << "Pound" << ":" << " " << weight * 2.20462262 << endl;
-                    cout << "Short Ton" << ":" << " " << weight * 0.00110231131 << endl;
-                }
-                else if (convert == "LB")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Gram" << ":" << " " << weight * 453.592 << endl;
-                    cout << "Long Ton" << ":" << " " << weight * 0.000446428571 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 16 << endl;
-                    cout << "Pound" << ":" << " " << weight << endl;
-                    cout << "Short Ton" << ":" << " " << weight * 0.0005 << endl;
-                }
-                else if (convert == "LT")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Kilogram" << ":" << " " << weight * 1016.04691 << endl;
-                    cout << "Long Ton" << ":" << " " << weight * 0.0000279017857 << endl;
-                    cout << "Metric Ton" << ":" << " " << weight * 1.01604691 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 35840 << endl;
-                    cout << "Pound" << ":" << " " << weight * 2240 << endl;
-                    cout << "Short Ton" << ":" << " " << weight * 1.12 << endl;
-                }
-                else if (convert == "MG")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Carat" << ":" << " " << weight * 5 << endl;
-                    cout << "Grain" << ":" << " " << weight * 0.0154323584 << endl;
+                    cout << "Centigram" << ":" << " " << weight * 0.1 << endl;
+                    cout << "Decigram" << ":" << " " << weight * 0.01 << endl;
                     cout << "Gram" << ":" << " " << weight * 0.001 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 0.0000352739619 << endl;
-                    cout << "Pennyweight" << ":" << " " << weight * 0.00115740741 << endl;
-                    cout << "Pound" << ":" << " " << weight * 0.00000220462262 << endl;
+                    cout << "Dekagram" << ":" << " " << weight * 0.0001 << endl;
+                    cout << "Hectogram" << ":" << " " << weight * 0.00001 << endl;
+                    cout << "Kilogram" << ":" << " " << weight * 0.000001 << endl;
+                    cout << "Metric Ton" << ":" << " " << weight * 1e-9 << endl;
+                    cout << "Grain" << ":" << " " << weight * 0.0154323584 << endl;
+                    cout << "Dram" << ":" << " " << weight * 0.000564383391 << endl;
+                    cout << "Ounce" << ":" << " " << weight * 3.52739619e-5 << endl;
+                    cout << "Pound" << ":" << " " << weight * 2.20462262e-6 << endl;
+                    cout << "Short Hundredweight" << ":" << " " << weight * 2.20462262e-7 << endl;
+                    cout << "Long Hundredweight" << ":" << " " << weight * 1.96841306e-7 << endl;
+                    cout << "Short Ton" << ":" << " " << weight * 1.10231131e-9 << endl;
+                    cout << "Long Ton" << ":" << " " << weight * 9.84206528e-10 << endl;
+                    cout << "Apothecaries' Scruple" << ":" << " " << weight * 0.000771617917 << endl;
+                    cout << "Pennyweight" << ":" << " " << weight * 0.0000154323584 << endl;
+                    cout << "Apothecaries' Dram" << ":" << " " << weight * 0.000564383391 << endl;
+                    cout << "Apothecaries' Ounce" << ":" << " " << weight * 3.52739619e-5 << endl;
+                    cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 2.20462262e-6 << endl;
                 }
-                else if (convert == "MT")
-                {
-                    input_weight();
 
-                    newline();
-
-                    cout << "Gram" << ":" << " " << weight * 1000000 << endl;
-                    cout << "Kilogram" << ":" << " " << weight * 1000 << endl;
-                    cout << "Long Ton" << ":" << " " << weight * 0.984206527 << endl;
-                    cout << "Metric Ton" << ":" << " " << weight * 0.90718474 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 35273.9619 << endl;
-                    cout << "Pound" << ":" << " " << weight * 2204.62262 << endl;
-                    cout << "Short Ton" << ":" << " " << weight * 1.10231131 << endl;
-                }
-                else if (convert == "OZ")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Long Ton" << ":" << " " << weight * 0.0000279017857 << endl;
-                    cout << "Ounce" << ":" << " " << weight << endl;
-                    cout << "Pound" << ":" << " " << weight * 0.0625 << endl;
-                    cout << "Short Ton" << ":" << " " << weight * 0.00003125 << endl;
-                }
-                else if (convert == "ST")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Kilogram" << ":" << " " << weight * 6.35029318 << endl;
-                    cout << "Long Ton" << ":" << " " << weight * 0.0000279017857 << endl;
-                    cout << "Metric Ton" << ":" << " " << weight * 0.00635029318 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 224 << endl;
-                    cout << "Pound" << ":" << " " << weight * 14 << endl;
-                    cout << "Short Ton" << ":" << " " << weight * 0.007 << endl;
-                }
-                else if (convert == "TL")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Ounce" << ":" << " " << weight << endl;
-                    cout << "Pound" << ":" << " " << weight * 0.0685714286 << endl;
-                    cout << "Troy Ounce" << ":" << " " << weight * 31.1034768 << endl;
-                }
-                else if (convert == "TON")
-                {
-                    input_weight();
-
-                    newline();
-
-                    cout << "Gram" << ":" << " " << weight * 907184.74 << endl;
-                    cout << "Kilogram" << ":" << " " << weight * 907.18474 << endl;
-                    cout << "Long Ton" << ":" << " " << weight * 0.892857143 << endl;
-                    cout << "Metric Ton" << ":" << " " << weight * 0.90718474 << endl;
-                    cout << "Ounce" << ":" << " " << weight * 32000 << endl;
-                    cout << "Pound" << ":" << " " << weight * 2000 << endl;
-                }
             }
             else if (unit_select == 'L')
             {
