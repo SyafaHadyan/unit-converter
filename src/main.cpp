@@ -119,6 +119,7 @@ int main()
                     input_temperature();
 
                     newline();
+                    
                     cout << "Fahrenheit" << ":" << " " << ((temp * 9) / 5) + 32 << endl;
                     cout << "Kelvin" << ":" << " " << temp + 273.15 << endl;
                     
@@ -128,6 +129,7 @@ int main()
                     input_temperature();
 
                     newline();
+
                     cout << "Celcius" << ":" << " " << ((temp - 32) * 5) / 9 << endl;
                     cout << "Kelvin" << ":" << " " << temp + 459.67 << endl;
                 }
@@ -136,6 +138,7 @@ int main()
                     input_temperature();
 
                     newline();
+
                     cout << "Celcius" << ":" << " " << (temp - 273.15) << endl;
                     cout << "Fahrenheit" << ":" << " " << ((temp - 273.15) * 9) / 5 + 32 << endl;
                 }
@@ -339,9 +342,12 @@ int main()
 
                 input_unit_convert();
 
-                if (convert == "KM")
+                if (convert == "M")
                 {
                     input_weight();
+
+                    newline();
+
                 }
 
             }
