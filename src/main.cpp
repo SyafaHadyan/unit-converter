@@ -540,6 +540,24 @@ int main()
                     cout << "Inch" << ":" << " " << length * 72913.3858 << endl;
                     cout << "Light Year" << ":" << " " << length * 1.85301817e-13 << endl;
                 }
+                else if (convert == "LIGHT")
+                {
+                    input_length();
+
+                    newline();
+
+                    cout << "Meter" << ":" << " " << length * 9460730472580800 << endl;
+                    cout << "Kilometer" << ":" << " " << length * 9460730472580.8 << endl;
+                    cout << "Centimeter" << ":" << " " << length * 946073047258080000 << endl;
+                    cout << "Millimeter" << ":" << " " << length * 9460730472580800000 << endl;
+                    cout << "Micrometer" << ":" << " " << length * 9460730472580800000000 << endl;
+                    cout << "Nanometer" << ":" << " " << length * 9460730472580800000000000 << endl;
+                    cout << "Mile" << ":" << " " << length * 5878625373183.66 << endl;
+                    cout << "Yard" << ":" << " " << length * 10346380896074400 << endl;
+                    cout << "Foot" << ":" << " " << length * 31039142688223200 << endl;
+                    cout << "Inch" << ":" << " " << length * 372469712258678000 << endl;
+                    cout << "Nautical Mile" << ":" << " " << length * 508925608737.49 << endl;
+                }
             }
         }
         else
