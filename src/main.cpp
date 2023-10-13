@@ -119,7 +119,7 @@ int main()
                     input_temperature();
 
                     newline();
-                    
+
                     cout << "Fahrenheit" << ":" << " " << ((temp * 9) / 5) + 32 << endl;
                     cout << "Kelvin" << ":" << " " << temp + 273.15 << endl;
                     
@@ -347,6 +347,8 @@ int main()
                     input_weight();
 
                     newline();
+
+                    cout 
 
                 }
 
