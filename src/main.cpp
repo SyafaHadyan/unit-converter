@@ -161,7 +161,7 @@ int main()
 
                 if (convert == "MG")
                 {
-                    input_length();
+                    input_weight();
 
                     newline();
 
@@ -188,7 +188,7 @@ int main()
                 }
                 else if (convert == "CG")
                 {
-                    input_length();
+                    input_weight();
 
                     newline();
 
@@ -212,6 +212,10 @@ int main()
                     cout << "Apothecaries' Dram" << ":" << " " << weight * 0.00564383391 << endl;
                     cout << "Apothecaries' Ounce" << ":" << " " << weight * 0.000352739619 << endl;
                     cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 2.20462262e-5 << endl;
+                }
+                else if (convert == "DG")
+                {
+                    input_weight();
                 }
 
             }
