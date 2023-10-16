@@ -294,6 +294,33 @@ int main()
                     cout << "Apothecaries' Ounce" << ":" << " " << weight * 0.352739619 << endl;
                     cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 0.0220462262 << endl;
                 }
+                else if (convert == "HG")
+                {
+                    input_weight();
+
+                    newline();
+
+                    cout << "Milligram" << ":" << " " << weight * 100000 << endl;
+                    cout << "Centigram" << ":" << " " << weight * 10000 << endl;
+                    cout << "Decigram" << ":" << " " << weight * 1000 << endl;
+                    cout << "Gram" << ":" << " " << weight * 100 << endl;
+                    cout << "Dekagram" << ":" << " " << weight * 10 << endl;
+                    cout << "Kilogram" << ":" << " " << weight * 0.1 << endl;
+                    cout << "Metric Ton" << ":" << " " << weight * 0.0001 << endl;
+                    cout << "Grain" << ":" << " " << weight * 1543.23584 << endl;
+                    cout << "Dram" << ":" << " " << weight * 56.4383391 << endl;
+                    cout << "Ounce" << ":" << " " << weight * 3.52739619 << endl;
+                    cout << "Pound" << ":" << " " << weight * 0.220462262 << endl;
+                    cout << "Short Hundredweight" << ":" << " " << weight * 0.0220462262 << endl;
+                    cout << "Long Hundredweight" << ":" << " " << weight * 0.0196841306 << endl;
+                    cout << "Short Ton" << ":" << " " << weight * 0.000110231131 << endl;
+                    cout << "Long Ton" << ":" << " " << weight * 9.84206528e-5 << endl;
+                    cout << "Apothecaries' Scruple" << ":" << " " << weight * 0.771617917 << endl;
+                    cout << "Pennyweight" << ":" << " " << weight * 15.4323584 << endl;
+                    cout << "Apothecaries' Dram" << ":" << " " << weight * 56.4383391 << endl;
+                    cout << "Apothecaries' Ounce" << ":" << " " << weight * 3.52739619 << endl;
+                    cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 0.220462262 << endl;
+                }
             }
             else if (unit_select == 'L')
             {
