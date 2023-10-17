@@ -456,6 +456,33 @@ int main()
                     cout << "Apothecaries' Ounce" << ":" << " " << weight * 0.0625 << endl;
                     cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 0.00390625 << endl;
                 }
+                else if (convert == "LB")
+                {
+                    input_weight();
+
+                    newline();
+
+                    cout << "Milligram" << ":" << " " << weight * 453592.37 << endl;
+                    cout << "Centigram" << ":" << " " << weight * 45359.237 << endl;
+                    cout << "Decigram" << ":" << " " << weight * 4535.9237 << endl;
+                    cout << "Gram" << ":" << " " << weight * 453.59237 << endl;
+                    cout << "Dekagram" << ":" << " " << weight * 45.359237 << endl;
+                    cout << "Hectogram" << ":" << " " << weight * 4.5359237 << endl;
+                    cout << "Kilogram" << ":" << " " << weight * 0.45359237 << endl;
+                    cout << "Metric Ton" << ":" << " " << weight * 0.00045359237 << endl;
+                    cout << "Grain" << ":" << " " << weight * 7000 << endl;
+                    cout << "Dram" << ":" << " " << weight * 256 << endl;
+                    cout << "Ounce" << ":" << " " << weight * 16 << endl;
+                    cout << "Short Hundredweight" << ":" << " " << weight * 0.16 << endl;
+                    cout << "Long Hundredweight" << ":" << " " << weight * 0.142857143 << endl;
+                    cout << "Short Ton" << ":" << " " << weight * 0.0008 << endl;
+                    cout << "Long Ton" << ":" << " " << weight * 0.000714285714 << endl;
+                    cout << "Apothecaries' Scruple" << ":" << " " << weight * 5.6 << endl;
+                    cout << "Pennyweight" << ":" << " " << weight * 112 << endl;
+                    cout << "Apothecaries' Dram" << ":" << " " << weight * 256 << endl;
+                    cout << "Apothecaries' Ounce" << ":" << " " << weight * 16 << endl;
+                    cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 1 << endl;
+                }
             }
             else if (unit_select == 'L')
             {
