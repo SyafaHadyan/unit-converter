@@ -510,6 +510,33 @@ int main()
                     cout << "Apothecaries' Ounce" << ":" << " " << weight * 160 << endl;
                     cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 10 << endl;
                 }
+                else if (convert == "LHCWT")
+                {
+                    input_weight();
+
+                    newline();
+
+                    cout << "Milligram" << ":" << " " << weight * 5080234.54 << endl;
+                    cout << "Centigram" << ":" << " " << weight * 508023.454 << endl;
+                    cout << "Decigram" << ":" << " " << weight * 50802.3454 << endl;
+                    cout << "Gram" << ":" << " " << weight * 5080.23454 << endl;
+                    cout << "Dekagram" << ":" << " " << weight * 508.023454 << endl;
+                    cout << "Hectogram" << ":" << " " << weight * 50.8023454 << endl;
+                    cout << "Kilogram" << ":" << " " << weight * 5.08023454 << endl;
+                    cout << "Metric Ton" << ":" << " " << weight * 0.00508023454 << endl;
+                    cout << "Grain" << ":" << " " << weight * 78400 << endl;
+                    cout << "Dram" << ":" << " " << weight * 2864 << endl;
+                    cout << "Ounce" << ":" << " " << weight * 179 << endl;
+                    cout << "Pound" << ":" << " " << weight * 11.25 << endl;
+                    cout << "Short Hundredweight" << ":" << " " << weight * 1.12 << endl;
+                    cout << "Short Ton" << ":" << " " << weight * 0.0056 << endl;
+                    cout << "Long Ton" << ":" << " " << weight * 0.00892857143 << endl;
+                    cout << "Apothecaries' Scruple" << ":" << " " << weight * 39.2 << endl;
+                    cout << "Pennyweight" << ":" << " " << weight * 784 << endl;
+                    cout << "Apothecaries' Dram" << ":" << " " << weight * 2864 << endl;
+                    cout << "Apothecaries' Ounce" << ":" << " " << weight * 179 << endl;
+                    cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 11.25 << endl;
+                }
             }
             else if (unit_select == 'L')
             {
