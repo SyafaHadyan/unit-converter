@@ -975,6 +975,13 @@ int main()
                     cout << "Nautical Mile" << ":" << " " << length * 508925608737.49 << endl;
                 }
             }
+            else if (unit_select == "TI")
+            {
+                for (auto& time_list : time_units)
+                {
+                    cout << "\n" << time_list << "\n" << endl;
+                }
+            }
         }
         else
         {
