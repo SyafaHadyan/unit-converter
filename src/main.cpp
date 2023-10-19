@@ -103,6 +103,24 @@ int main()
         "(LIGHT) Light Year"
     };
 
+    vector<string> time_units =
+    {
+        "(S) Second",
+        "(MS) Millisecond",
+        "(US) Microsecond",
+        "(NS) Nanosecond",
+        "(PS) Picosecond",
+        "(MIN) Minute",
+        "(HR) Hour",
+        "(DAY) Day",
+        "(WK) Week",
+        "(MON) Month",
+        "(YR) Year",
+        "(DEC) Decade",
+        "(CEN) Century",
+        "(MIL) Millenium"
+    };
+
     do {
         cout << "\n" << endl;
         cout << "(T)" << " " << "Temperature" << "\n" << endl;
