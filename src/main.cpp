@@ -12,7 +12,6 @@ using namespace std;
 double temp;
 double weight;
 double length;
-double time;
 char unit_select;
 string convert;
 
