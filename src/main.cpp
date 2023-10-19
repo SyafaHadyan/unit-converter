@@ -9,10 +9,10 @@
 
 using namespace std;
 
-double temperature;
-double weight;
-double length;
-double time;
+long double temperature;
+long double weight;
+long double length;
+long double time;
 string unit_select;
 string convert;
 
