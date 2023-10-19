@@ -984,6 +984,27 @@ int main()
             }
 
             input_unit_convert();
+
+            if (convert == "S")
+            {
+                input_time();
+
+                newline();
+
+                cout << "Milisecond" << ":" << " " << time * 1000 << endl;
+                cout << "Microsecond" << ":" << " " << time * 1000000 << endl;
+                cout << "Nanosecond" << ":" << " " << time * 1000000000 << endl;
+                cout << "Picosecond" << ":" << " " << time * 1000000000000 << endl;
+                cout << "Minute" << ":" << " " << time * 0.0166666667 << endl;
+                cout << "Hour" << ":" << " " << time * 0.000277777778 << endl;
+                cout << "Day" << ":" << " " << time * 0.0000115740741 << endl;
+                cout << "Week" << ":" << " " << time * 0.00000165343915 << endl;
+                cout << "Month" << ":" << " " << time * 3.802570537e-7 << endl;
+                cout << "Year" << ":" << " " << time * 3.16880878e-8 << endl;
+                cout << "Decade" << ":" << " " << time * 3.16880878e-9 << endl;
+                cout << "Century" << ":" << " " << time * 3.16880878e-10 << endl;
+                cout << "Millenium" << ":" << " " << time * 3.16880878e-11 << endl;
+            }
         }
         else
         {
