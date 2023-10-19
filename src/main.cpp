@@ -1224,6 +1224,26 @@ int main()
                     cout << "Century" << ":" << " " << time * 0.1 << endl;
                     cout << "Millenium" << ":" << " " << time * 0.01 << endl;
                 }
+                else if (convert == "CEN")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time * 3153600000 << endl;
+                    cout << "Milisecond" << ":" << " " << time * 3153600000000 << endl;
+                    cout << "Microsecond" << ":" << " " << time * 3153600000000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time * 3153600000000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time * 3153600000000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time * 52560000 << endl;
+                    cout << "Hour" << ":" << " " << time * 876000 << endl;
+                    cout << "Day" << ":" << " " << time * 36500 << endl;
+                    cout << "Week" << ":" << " " << time * 5214.28571 << endl;
+                    cout << "Month" << ":" << " " << time * 1200 << endl;
+                    cout << "Year" << ":" << " " << time * 100 << endl;
+                    cout << "Decade" << ":" << " " << time * 10 << endl;
+                    cout << "Millenium" << ":" << " " << time * 0.1 << endl;
+                }
             }
         }
         else
