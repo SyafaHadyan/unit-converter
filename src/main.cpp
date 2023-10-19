@@ -126,6 +126,7 @@ int main()
         cout << "(T)" << " " << "Temperature" << "\n" << endl;
         cout << "(W)" << " " << "Weight" << "\n" << endl;
         cout << "(L)" << " " << "Length" << "\n" << endl;
+        cout << "(TI)" << " " << "Time" << "\n" << endl;
         
         cout << "Select unit" << ":" << " ";
         cin >> unit_select;
