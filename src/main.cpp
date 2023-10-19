@@ -13,7 +13,7 @@ double temperature;
 double weight;
 double length;
 double time;
-char unit_select;
+string unit_select;
 string convert;
 
 void newline()
@@ -131,14 +131,11 @@ int main()
         cout << "Select unit" << ":" << " ";
         cin >> unit_select;
 
-        if (islower(unit_select))
-        {
-            unit_select = toupper(unit_select);
-        }
+        std::transform(unit_select.begin(), unit_select.end(), unit_select.begin(), ::toupper);
 
-        if (unit_select == 'T' || unit_select == 'W' || unit_select == 'L')
+        if (unit_select == "T" || unit_select == "W" || unit_select == "L")
         {
-            if (unit_select == 'T')
+            if (unit_select == "T")
                 {
                     for (auto& temperature_list : temperature_units)
                     {
@@ -176,7 +173,7 @@ int main()
                     cout << "Fahrenheit" << ":" << " " << ((temperature - 273.15) * 9) / 5 + 32 << endl;
                 }
             }
-            else if (unit_select == 'W')
+            else if (unit_select == "W")
             {
                 for (auto& weight_list : weight_units)
                 {
@@ -752,7 +749,7 @@ int main()
                     cout << "Apothecaries' Ounce" << ":" << " " << weight * 16 << endl;
                 }
             }
-            else if (unit_select == 'L')
+            else if (unit_select == "L")
             {
                 for (auto& length_list : length_units)
                 {
