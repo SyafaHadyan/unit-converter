@@ -980,7 +980,7 @@ int main()
         {
             cout << "\n" << "Invalid input" << "\n" << endl;
         }
-    } while (unit_select != 'Q');
+    } while (unit_select != "Q");
 
     return 0;
 }
