@@ -95,6 +95,19 @@ int main()
         "(NAUT) Nautical Mile"
         "(LIGHT) Light Year"
     };
+    
+    vector<string> time_units =
+    {
+        "Microseconds"
+        "Miliseconds"
+        "Seconds"
+        "Minutes"
+        "Hours"
+        "Days"
+        "Weeks"
+        "Months"
+        "Years"
+    }
 
     do {
         cout << "\n" << endl;
