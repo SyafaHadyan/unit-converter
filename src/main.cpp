@@ -753,7 +753,7 @@ int main()
             {
                 for (auto& length_list : length_units)
                 {
-                    cout << "\n" << length_list << endl;
+                    cout << "\n" << length_list << "\n" << endl;
                 }
 
                 input_unit_convert();
