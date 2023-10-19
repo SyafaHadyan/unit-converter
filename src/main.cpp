@@ -618,6 +618,32 @@ int main()
                     cout << "Apothecaries' Ounce" << ":" << " " << weight * 0.00228571429 << endl;
                     cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 0.000142857143 << endl;
                 }
+                else if (convert == "DWT")
+                {
+                    input_weight();
+
+                    newline();
+
+                    cout << "Milligram" << ":" << " " << weight * 1771.8452 << endl;
+                    cout << "Centigram" << ":" << " " << weight * 177.18452 << endl;
+                    cout << "Decigram" << ":" << " " << weight * 17.718452 << endl;
+                    cout << "Gram" << ":" << " " << weight * 1.7718452 << endl;
+                    cout << "Dekagram" << ":" << " " << weight * 0.17718452 << endl;
+                    cout << "Hectogram" << ":" << " " << weight * 0.017718452 << endl;
+                    cout << "Kilogram" << ":" << " " << weight * 0.0017718452 << endl;
+                    cout << "Metric Ton" << ":" << " " << weight * 1.7718452e-6 << endl;
+                    cout << "Grain" << ":" << " " << weight * 27.34375 << endl;
+                    cout << "Dram" << ":" << " " << weight * 1 << endl;
+                    cout << "Ounce" << ":" << " " << weight * 0.0625 << endl;
+                    cout << "Pound" << ":" << " " << weight * 0.00390625 << endl;
+                    cout << "Short Hundredweight" << ":" << " " << weight * 0.000390625 << endl;
+                    cout << "Long Hundredweight" << ":" << " " << weight * 0.000347222222 << endl;
+                    cout << "Short Ton" << ":" << " " << weight * 1.953125e-6 << endl;
+                    cout << "Long Ton" << ":" << " " << weight * 1.73611111e-6 << endl;
+                    cout << "Apothercaries' Dram" << ":" << " " << weight * 0.078125 << endl;
+                    cout << "Apothecaries' Ounce" << ":" << " " << weight * 0.00520833333 << endl;
+                    cout << "Troy or Apothecaries' Pound" << ":" << " " << weight * 0.000325 << endl;
+                }
             }
             else if (unit_select == 'L')
             {
