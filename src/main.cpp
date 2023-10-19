@@ -47,6 +47,12 @@ void input_length()
     cin >> length;
 }
 
+void input_time()
+{
+    cout << "Enter time" << ":" << " ";
+    cin >> time;
+}
+
 int main()
 {
     vector<string> temperature_units =
