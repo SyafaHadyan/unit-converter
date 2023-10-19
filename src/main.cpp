@@ -982,6 +982,8 @@ int main()
                     cout << "\n" << time_list << "\n" << endl;
                 }
             }
+
+            input_unit_convert();
         }
         else
         {
