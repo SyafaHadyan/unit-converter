@@ -128,6 +128,27 @@ int main()
         "(MIL) Millenium"
     };
 
+    vector<string> data_units =
+    {
+        "(B) Byte",
+        "(KB) Kilobyte",
+        "(MB) Megabyte",
+        "(GB) Gigabyte",
+        "(TB) Terabyte",
+        "(PB) Petabyte",
+        "(EB) Exabyte",
+        "(ZB) Zettabyte",
+        "(YB) Yottabyte",
+        "(KIB) Kibibyte",
+        "(MIB) Mebibyte",
+        "(GIB) Gibibyte",
+        "(TIB) Tebibyte",
+        "(PIB) Pebibyte",
+        "(EIB) Exbibyte",
+        "(ZIB) Zebibyte",
+        "(YIB) Yobibyte"
+    };
+
     do {
         cout << "\n" << endl;
         cout << "(T)" << " " << "Temperature" << "\n" << endl;
