@@ -13,6 +13,7 @@ long double temperature;
 long double weight;
 long double length;
 long double time_value;
+long double data;
 string unit_select;
 string convert;
 
