@@ -54,6 +54,12 @@ void input_time()
     cin >> time_value;
 }
 
+void input_data()
+{
+    cout << "Enter data" << ":" << " ";
+    cin >> data;
+}
+
 int main()
 {
     vector<string> temperature_units =
