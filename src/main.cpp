@@ -162,7 +162,7 @@ int main()
 
         std::transform(unit_select.begin(), unit_select.end(), unit_select.begin(), ::toupper);
 
-        if (unit_select == "T" || unit_select == "W" || unit_select == "L" || unit_select == "TI")
+        if (unit_select == "T" || unit_select == "W" || unit_select == "L" || unit_select == "TI" || unit_select == "D")
         {
             if (unit_select == "T")
                 {
