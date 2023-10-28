@@ -13,7 +13,7 @@ long double temperature;
 long double weight;
 long double length;
 long double time_value;
-long double data;
+long double data_input;
 string unit_select;
 string convert;
 
@@ -57,7 +57,7 @@ void input_time()
 void input_data()
 {
     cout << "Enter data" << ":" << " ";
-    cin >> data;
+    cin >> data_input;
 }
 
 int main()
