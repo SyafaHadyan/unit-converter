@@ -1421,6 +1421,29 @@ int main()
                     cout << "Exbibyte" << ":" << " " << data_value * 0.000000953674316 << endl;
                     cout << "Zebibyte" << ":" << " " << data_value * 0.000000000931322575 << endl;
                 }
+                else if (convert == "PB")
+                {
+                    input_data();
+
+                    newline();
+
+                    cout << "Byte" << ":" << " " << data_value * 1125899906842624 << endl;
+                    cout << "Kilobyte" << ":" << " " << data_value * 1099511627776 << endl;
+                    cout << "Megabyte" << ":" << " " << data_value * 1073741824 << endl;
+                    cout << "Gigabyte" << ":" << " " << data_value * 1048576 << endl;
+                    cout << "Terabyte" << ":" << " " << data_value * 1024 << endl;
+                    cout << "Exabyte" << ":" << " " << data_value * 0.0009765625 << endl;
+                    cout << "Zettabyte" << ":" << " " << data_value * 0.000000953674316 << endl;
+                    cout << "Yottabyte" << ":" << " " << data_value * 0.000000000931322575 << endl;
+                    cout << "Bit" << ":" << " " << data_value * 9007199254740992 << endl;
+                    cout << "Kibibyte" << ":" << " " << data_value * 1099511627776 << endl;
+                    cout << "Mebibyte" << ":" << " " << data_value * 1073741824 << endl;
+                    cout << "Gibibyte" << ":" << " " << data_value * 1048576 << endl;
+                    cout << "Tebibyte" << ":" << " " << data_value * 1024 << endl;
+                    cout << "Pebibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Exbibyte" << ":" << " " << data_value * 0.0009765625 << endl;
+                    cout << "Zebibyte" << ":" << " " << data_value * 0.000000953674316 << endl;
+                }
             }
         }
         else
