@@ -49,7 +49,7 @@ void input_length()
 
 void input_time()
 {
-    cout << "Enter time_value" << ":" << " ";
+    cout << "Enter time" << ":" << " ";
     cin >> time_value;
 }
 
