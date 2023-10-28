@@ -139,6 +139,7 @@ int main()
         "(EB) Exabyte",
         "(ZB) Zettabyte",
         "(YB) Yottabyte",
+        "(BT) Bit",
         "(KIB) Kibibyte",
         "(MIB) Mebibyte",
         "(GIB) Gibibyte",
