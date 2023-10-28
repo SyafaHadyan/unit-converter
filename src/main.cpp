@@ -1515,6 +1515,30 @@ int main()
                     cout << "Zebibyte" << ":" << " " << data_value * 1024 << endl;
                     cout << "Yobibyte" << ":" << " " << data_value * 0.827181 << endl;
                 }
+                else if (convert == "BIT")
+                {
+                    input_data();
+
+                    newline();
+
+                    cout << "Byte" << ":" << " " << data_value * 0.125 << endl;
+                    cout << "Kilobyte" << ":" << " " << data_value * 0.00012207 << endl;
+                    cout << "Megabyte" << ":" << " " << data_value * 0.00000011920929 << endl;
+                    cout << "Gigabyte" << ":" << " " << data_value * 0.00000000011641532 << endl;
+                    cout << "Terabyte" << ":" << " " << data_value * 0.00000000000011368684 << endl;
+                    cout << "Petabyte" << ":" << " " << data_value * 0.00000000000000011102230 << endl;
+                    cout << "Exabyte" << ":" << " " << data_value * 0.00000000000000000010842022 << endl;
+                    cout << "Zettabyte" << ":" << " " << data_value * 0.00000000000000000000010583760 << endl;
+                    cout << "Yottabyte" << ":" << " " << data_value * 0.00000000000000000000000010326797 << endl;
+                    cout << "Kibibyte" << ":" << " " << data_value * 0.00012207 << endl;
+                    cout << "Mebibyte" << ":" << " " << data_value * 0.00000011920929 << endl;
+                    cout << "Gibibyte" << ":" << " " << data_value * 0.00000000011641532 << endl;
+                    cout << "Tebibyte" << ":" << " " << data_value * 0.00000000000011368684 << endl;
+                    cout << "Pebibyte" << ":" << " " << data_value * 0.00000000000000011102230 << endl;
+                    cout << "Exbibyte" << ":" << " " << data_value * 0.00000000000000000010842022 << endl;
+                    cout << "Zebibyte" << ":" << " " << data_value * 0.00000000000000000000010583760 << endl;
+                    cout << "Yobibyte" << ":" << " " << data_value * 0.00000000000000000000000010326797 << endl;
+                }
             }
         }
         else
