@@ -1319,6 +1319,7 @@ int main()
                     cout << "Exabyte" << ":" << " " << data_value * 0.00000000000000000086736174 << endl;
                     cout << "Zettabyte" << ":" << " " << data_value * 0.00000000000000000000084703297 << endl;
                     cout << "Yottabyte" << ":" << " " << data_value * 0.00000000000000000000000082718061 << endl;
+                    cout << "Bit" << ":" << " " << data_value * 8 << endl;
                     cout << "Kibibyte" << ":" << " " << data_value * 0.0009765625 << endl;
                     cout << "Mebibyte" << ":" << " " << data_value * 0.000000953674316 << endl;
                     cout << "Gibibyte" << ":" << " " << data_value * 0.000000000931322575 << endl;
