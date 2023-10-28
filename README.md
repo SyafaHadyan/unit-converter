@@ -16,6 +16,8 @@ This is a command-line unit converter that currently supports temperature, weigh
 
 (L) Length
 
+(TI) Time
+
 Select unit: T
 
 (C) Celcius
@@ -39,6 +41,8 @@ Kelvin: 283.15
 (W) Weight
 
 (L) Length
+
+(TI) Time
 
 Select unit:
 ```
@@ -86,3 +90,20 @@ The program will loop itself indefinetely until you press `Q`
 - (IN) Inch
 - (NAUT) Nautical Mile
 - (LIGHT) Light Year
+
+### Time
+
+- (S) Second
+- (MS) Millisecond
+- (US) Microsecond
+- (NS) Nanosecond
+- (PS) Picosecond
+- (MIN) Minute
+- (HR) Hour
+- (DAY) Day
+- (WK) Week
+- (MON) Month
+- (YR) Year
+- (DEC) Decade
+- (CEN) Century
+- (MIL) Millenium"

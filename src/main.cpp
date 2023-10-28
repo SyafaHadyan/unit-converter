@@ -9,10 +9,11 @@
 
 using namespace std;
 
-double temp;
-double weight;
-double length;
-char unit_select;
+long double temperature;
+long double weight;
+long double length;
+long double time_value;
+string unit_select;
 string convert;
 
 void newline()
@@ -31,7 +32,7 @@ void input_unit_convert()
 void input_temperature()
 {
     cout << "Enter temperature" << ":" << " ";
-    cin >> temp;
+    cin >> temperature;
 }
 
 void input_weight()
@@ -44,6 +45,12 @@ void input_length()
 {
     cout << "Enter length" << ":" << " ";
     cin >> length;
+}
+
+void input_time()
+{
+    cout << "Enter time" << ":" << " ";
+    cin >> time_value;
 }
 
 int main()
@@ -96,23 +103,39 @@ int main()
         "(LIGHT) Light Year"
     };
 
+    vector<string> time_units =
+    {
+        "(S) Second",
+        "(MS) Millisecond",
+        "(US) Microsecond",
+        "(NS) Nanosecond",
+        "(PS) Picosecond",
+        "(MIN) Minute",
+        "(HR) Hour",
+        "(DAY) Day",
+        "(WK) Week",
+        "(MON) Month",
+        "(YR) Year",
+        "(DEC) Decade",
+        "(CEN) Century",
+        "(MIL) Millenium"
+    };
+
     do {
         cout << "\n" << endl;
         cout << "(T)" << " " << "Temperature" << "\n" << endl;
         cout << "(W)" << " " << "Weight" << "\n" << endl;
         cout << "(L)" << " " << "Length" << "\n" << endl;
+        cout << "(TI)" << " " << "Time" << "\n" << endl;
         
         cout << "Select unit" << ":" << " ";
         cin >> unit_select;
 
-        if (islower(unit_select))
-        {
-            unit_select = toupper(unit_select);
-        }
+        std::transform(unit_select.begin(), unit_select.end(), unit_select.begin(), ::toupper);
 
-        if (unit_select == 'T' || unit_select == 'W' || unit_select == 'L')
+        if (unit_select == "T" || unit_select == "W" || unit_select == "L" || unit_select == "TI")
         {
-            if (unit_select == 'T')
+            if (unit_select == "T")
                 {
                     for (auto& temperature_list : temperature_units)
                     {
@@ -127,8 +150,8 @@ int main()
 
                     newline();
 
-                    cout << "Fahrenheit" << ":" << " " << ((temp * 9) / 5) + 32 << endl;
-                    cout << "Kelvin" << ":" << " " << temp + 273.15 << endl;
+                    cout << "Fahrenheit" << ":" << " " << ((temperature * 9) / 5) + 32 << endl;
+                    cout << "Kelvin" << ":" << " " << temperature + 273.15 << endl;
                     
                 }
                 else if (convert == "F")
@@ -137,8 +160,8 @@ int main()
 
                     newline();
 
-                    cout << "Celcius" << ":" << " " << ((temp - 32) * 5) / 9 << endl;
-                    cout << "Kelvin" << ":" << " " << temp + 459.67 << endl;
+                    cout << "Celcius" << ":" << " " << ((temperature - 32) * 5) / 9 << endl;
+                    cout << "Kelvin" << ":" << " " << temperature + 459.67 << endl;
                 }
                 else if (convert == "K")
                 {
@@ -146,11 +169,11 @@ int main()
 
                     newline();
 
-                    cout << "Celcius" << ":" << " " << (temp - 273.15) << endl;
-                    cout << "Fahrenheit" << ":" << " " << ((temp - 273.15) * 9) / 5 + 32 << endl;
+                    cout << "Celcius" << ":" << " " << (temperature - 273.15) << endl;
+                    cout << "Fahrenheit" << ":" << " " << ((temperature - 273.15) * 9) / 5 + 32 << endl;
                 }
             }
-            else if (unit_select == 'W')
+            else if (unit_select == "W")
             {
                 for (auto& weight_list : weight_units)
                 {
@@ -726,11 +749,11 @@ int main()
                     cout << "Apothecaries' Ounce" << ":" << " " << weight * 16 << endl;
                 }
             }
-            else if (unit_select == 'L')
+            else if (unit_select == "L")
             {
                 for (auto& length_list : length_units)
                 {
-                    cout << "\n" << length_list << endl;
+                    cout << "\n" << length_list << "\n" << endl;
                 }
 
                 input_unit_convert();
@@ -952,12 +975,302 @@ int main()
                     cout << "Nautical Mile" << ":" << " " << length * 508925608737.49 << endl;
                 }
             }
+            else if (unit_select == "TI")
+            {
+                for (auto& time_list : time_units)
+                {
+                    cout << "\n" << time_list << "\n" << endl;
+                }
+
+                input_unit_convert();
+
+                if (convert == "S")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Milisecond" << ":" << " " << time_value * 1000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 1000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 1000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 1000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 0.0166666667 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 0.000277777778 << endl;
+                    cout << "Day" << ":" << " " << time_value * 0.0000115740741 << endl;
+                    cout << "Week" << ":" << " " << time_value * 0.00000165343915 << endl;
+                    cout << "Month" << ":" << " " << time_value * 3.802570537e-7 << endl;
+                    cout << "Year" << ":" << " " << time_value * 3.16880878e-8 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 3.16880878e-9 << endl;
+                    cout << "Century" << ":" << " " << time_value * 3.16880878e-10 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 3.16880878e-11 << endl;
+                }
+                else if (convert == "MS")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 0.001 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 1000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 1000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 1000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 0.0000166666667 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 0.000000277777778 << endl;
+                    cout << "Day" << ":" << " " << time_value * 0.0000000115740741 << endl;
+                    cout << "Week" << ":" << " " << time_value * 0.00000000165343915 << endl;
+                    cout << "Month" << ":" << " " << time_value * 3.802570537e-10 << endl;
+                    cout << "Year" << ":" << " " << time_value * 3.16880878e-11 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 3.16880878e-12 << endl;
+                    cout << "Century" << ":" << " " << time_value * 3.16880878e-13 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 3.16880878e-14 << endl;
+                }
+                else if (convert == "US")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 0.000001 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 0.001 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 1000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 1000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 0.0000000166666667 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 2.77777778e-10 << endl;
+                    cout << "Day" << ":" << " " << time_value * 1.15740741e-11 << endl;
+                    cout << "Week" << ":" << " " << time_value * 1.65343915e-12 << endl;
+                    cout << "Month" << ":" << " " << time_value * 3.80257054e-13 << endl;
+                    cout << "Year" << ":" << " " << time_value * 3.16880878e-14 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 3.16880878e-15 << endl;
+                    cout << "Century" << ":" << " " << time_value * 3.16880878e-16 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 3.16880878e-17 << endl;
+                }
+                else if (convert == "NS")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 0.000000001 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 0.000001 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 0.001 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 1000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 0.0000000000166666667 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 2.77777778e-13 << endl;
+                    cout << "Day" << ":" << " " << time_value * 1.15740741e-14 << endl;
+                    cout << "Week" << ":" << " " << time_value * 1.65343915e-15 << endl;
+                    cout << "Month" << ":" << " " << time_value * 3.80257054e-16 << endl;
+                    cout << "Year" << ":" << " " << time_value * 3.16880878e-17 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 3.16880878e-18 << endl;
+                    cout << "Century" << ":" << " " << time_value * 3.16880878e-19 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 3.16880878e-20 << endl;
+                }
+                else if (convert == "PS")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 0.000000000001 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 0.000000001 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 0.000001 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 0.001 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 0.0000000000000166666667 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 2.77777778e-16 << endl;
+                    cout << "Day" << ":" << " " << time_value * 1.15740741e-17 << endl;
+                    cout << "Week" << ":" << " " << time_value * 1.65343915e-18 << endl;
+                    cout << "Month" << ":" << " " << time_value * 3.80257054e-19 << endl;
+                    cout << "Year" << ":" << " " << time_value * 3.16880878e-20 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 3.16880878e-21 << endl;
+                    cout << "Century" << ":" << " " << time_value * 3.16880878e-22 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 3.16880878e-23 << endl;
+                }
+                else if (convert == "MIN")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 60 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 60000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 60000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 60000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 60000000000000 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 0.0166666667 << endl;
+                    cout << "Day" << ":" << " " << time_value * 0.000694444444 << endl;
+                    cout << "Week" << ":" << " " << time_value * 0.0000992063492 << endl;
+                    cout << "Month" << ":" << " " << time_value * 0.0000228310502 << endl;
+                    cout << "Year" << ":" << " " << time_value * 0.00000190258752 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 0.000000190258752 << endl;
+                    cout << "Century" << ":" << " " << time_value * 0.0000000190258752 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 0.00000000190258752 << endl;
+                }
+                else if (convert == "HR")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 3600 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 3600000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 3600000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 3600000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 3600000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 60 << endl;
+                    cout << "Day" << ":" << " " << time_value * 0.0416666667 << endl;
+                    cout << "Week" << ":" << " " << time_value * 0.00595238095 << endl;
+                    cout << "Month" << ":" << " " << time_value * 0.00136895476 << endl;
+                    cout << "Year" << ":" << " " << time_value * 0.000114079563 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 0.0000114079563 << endl;
+                    cout << "Century" << ":" << " " << time_value * 0.00000114079563 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 0.000000114079563 << endl;
+                }
+                else if (convert == "DAY")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 86400 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 86400000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 86400000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 86400000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 86400000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 1440 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 24 << endl;
+                    cout << "Week" << ":" << " " << time_value * 0.142857143 << endl;
+                    cout << "Month" << ":" << " " << time_value * 0.0328549112 << endl;
+                    cout << "Year" << ":" << " " << time_value * 0.00273785079 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 0.000273785079 << endl;
+                    cout << "Century" << ":" << " " << time_value * 0.0000273785079 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 0.00000273785079 << endl;
+                }
+                else if (convert == "WK")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 604800 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 604800000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 604800000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 604800000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 604800000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 10080 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 168 << endl;
+                    cout << "Day" << ":" << " " << time_value * 7 << endl;
+                    cout << "Month" << ":" << " " << time_value * 0.229979466 << endl;
+                    cout << "Year" << ":" << " " << time_value * 0.0191649555 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 0.00191649555 << endl;
+                    cout << "Century" << ":" << " " << time_value * 0.000191649555 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 0.0000191649555 << endl;
+                }
+                else if (convert == "MON")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 2628000 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 2628000000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 2628000000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 2628000000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 2628000000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 43800 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 730 << endl;
+                    cout << "Day" << ":" << " " << time_value * 30.4166667 << endl;
+                    cout << "Week" << ":" << " " << time_value * 4.3452381 << endl;
+                    cout << "Year" << ":" << " " << time_value * 0.0833333333 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 0.00833333333 << endl;
+                    cout << "Century" << ":" << " " << time_value * 0.000833333333 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 0.0000833333333 << endl;
+                }
+                else if (convert == "YR")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 31536000 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 31536000000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 31536000000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 31536000000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 31536000000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 525600 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 8760 << endl;
+                    cout << "Day" << ":" << " " << time_value * 365 << endl;
+                    cout << "Week" << ":" << " " << time_value * 52.1428571 << endl;
+                    cout << "Month" << ":" << " " << time_value * 12 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 0.1 << endl;
+                    cout << "Century" << ":" << " " << time_value * 0.01 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 0.001 << endl;
+                }
+                else if (convert == "DEC")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 315360000 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 315360000000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 315360000000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 315360000000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 315360000000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 5256000 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 87600 << endl;
+                    cout << "Day" << ":" << " " << time_value * 3650 << endl;
+                    cout << "Week" << ":" << " " << time_value * 521.428571 << endl;
+                    cout << "Month" << ":" << " " << time_value * 120 << endl;
+                    cout << "Year" << ":" << " " << time_value * 10 << endl;
+                    cout << "Century" << ":" << " " << time_value * 0.1 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 0.01 << endl;
+                }
+                else if (convert == "CEN")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 3153600000 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 3153600000000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 3153600000000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 3153600000000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 3153600000000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 52560000 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 876000 << endl;
+                    cout << "Day" << ":" << " " << time_value * 36500 << endl;
+                    cout << "Week" << ":" << " " << time_value * 5214.28571 << endl;
+                    cout << "Month" << ":" << " " << time_value * 1200 << endl;
+                    cout << "Year" << ":" << " " << time_value * 100 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 10 << endl;
+                    cout << "Millenium" << ":" << " " << time_value * 0.1 << endl;
+                }
+                else if (convert == "MIL")
+                {
+                    input_time();
+
+                    newline();
+
+                    cout << "Second" << ":" << " " << time_value * 31536000000 << endl;
+                    cout << "Milisecond" << ":" << " " << time_value * 31536000000000 << endl;
+                    cout << "Microsecond" << ":" << " " << time_value * 31536000000000000 << endl;
+                    cout << "Nanosecond" << ":" << " " << time_value * 31536000000000000000 << endl;
+                    cout << "Picosecond" << ":" << " " << time_value * 31536000000000000000000 << endl;
+                    cout << "Minute" << ":" << " " << time_value * 525600000 << endl;
+                    cout << "Hour" << ":" << " " << time_value * 8760000 << endl;
+                    cout << "Day" << ":" << " " << time_value * 365000 << endl;
+                    cout << "Week" << ":" << " " << time_value * 52142.8571 << endl;
+                    cout << "Month" << ":" << " " << time_value * 12000 << endl;
+                    cout << "Year" << ":" << " " << time_value * 1000 << endl;
+                    cout << "Decade" << ":" << " " << time_value * 100 << endl;
+                    cout << "Century" << ":" << " " << time_value * 10 << endl;
+                }
+            }
         }
         else
         {
             cout << "\n" << "Invalid input" << "\n" << endl;
         }
-    } while (unit_select != 'Q');
+    } while (unit_select != "Q");
 
     return 0;
 }
