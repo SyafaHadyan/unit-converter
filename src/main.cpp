@@ -1344,7 +1344,7 @@ int main()
                     cout << "Zettabyte" << ":" << " " << data_value * 0.00000000000000000086736174 << endl;
                     cout << "Yottabyte" << ":" << " " << data_value * 0.00000000000000000000084703297 << endl;
                     cout << "Bit" << ":" << " " << data_value * 8192 << endl;
-                    cout << "Kibibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Kibibyte" << ":" << " " << data_value * 0.976563 << endl;
                     cout << "Mebibyte" << ":" << " " << data_value * 0.0009765625 << endl;
                     cout << "Gibibyte" << ":" << " " << data_value * 0.000000953674316 << endl;
                     cout << "Tebibyte" << ":" << " " << data_value * 0.000000000931322575 << endl;
@@ -1368,7 +1368,7 @@ int main()
                     cout << "Yottabyte" << ":" << " " << data_value * 0.00000000000000000086736174 << endl;
                     cout << "Bit" << ":" << " " << data_value * 8388608 << endl;
                     cout << "Kibibyte" << ":" << " " << data_value * 1024 << endl;
-                    cout << "Mebibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Mebibyte" << ":" << " " << data_value * 0.953674 << endl;
                     cout << "Gibibyte" << ":" << " " << data_value * 0.0009765625 << endl;
                     cout << "Tebibyte" << ":" << " " << data_value * 0.000000953674316 << endl;
                     cout << "Pebibyte" << ":" << " " << data_value * 0.000000000931322575 << endl;
@@ -1392,7 +1392,7 @@ int main()
                     cout << "Bit" << ":" << " " << data_value * 8589934592 << endl;
                     cout << "Kibibyte" << ":" << " " << data_value * 1048576 << endl;
                     cout << "Mebibyte" << ":" << " " << data_value * 1024 << endl;
-                    cout << "Gibibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Gibibyte" << ":" << " " << data_value * 0.931323 << endl;
                     cout << "Tebibyte" << ":" << " " << data_value * 0.0009765625 << endl;
                     cout << "Pebibyte" << ":" << " " << data_value * 0.000000953674316 << endl;
                     cout << "Exbibyte" << ":" << " " << data_value * 0.000000000931322575 << endl;
@@ -1416,7 +1416,7 @@ int main()
                     cout << "Kibibyte" << ":" << " " << data_value * 1073741824 << endl;
                     cout << "Mebibyte" << ":" << " " << data_value * 1048576 << endl;
                     cout << "Gibibyte" << ":" << " " << data_value * 1024 << endl;
-                    cout << "Tebibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Tebibyte" << ":" << " " << data_value * 0.931323 << endl;
                     cout << "Pebibyte" << ":" << " " << data_value * 0.0009765625 << endl;
                     cout << "Exbibyte" << ":" << " " << data_value * 0.000000953674316 << endl;
                     cout << "Zebibyte" << ":" << " " << data_value * 0.000000000931322575 << endl;
@@ -1440,7 +1440,7 @@ int main()
                     cout << "Mebibyte" << ":" << " " << data_value * 1073741824 << endl;
                     cout << "Gibibyte" << ":" << " " << data_value * 1048576 << endl;
                     cout << "Tebibyte" << ":" << " " << data_value * 1024 << endl;
-                    cout << "Pebibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Pebibyte" << ":" << " " << data_value * 0.888178 << endl;
                     cout << "Exbibyte" << ":" << " " << data_value * 0.0009765625 << endl;
                     cout << "Zebibyte" << ":" << " " << data_value * 0.000000953674316 << endl;
                 }
@@ -1464,7 +1464,7 @@ int main()
                     cout << "Gibibyte" << ":" << " " << data_value * 1073741824 << endl;
                     cout << "Tebibyte" << ":" << " " << data_value * 1048576 << endl;
                     cout << "Pebibyte" << ":" << " " << data_value * 1024 << endl;
-                    cout << "Exbibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Exbibyte" << ":" << " " << data_value * 0.867362 << endl;
                     cout << "Zebibyte" << ":" << " " << data_value * 0.0009765625 << endl;
                 }
                 else if (convert == "ZB")
@@ -1488,7 +1488,8 @@ int main()
                     cout << "Tebibyte" << ":" << " " << data_value * 1073741824 << endl;
                     cout << "Pebibyte" << ":" << " " << data_value * 1048576 << endl;
                     cout << "Exbibyte" << ":" << " " << data_value * 1024 << endl;
-                    cout << "Zebibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Zebibyte" << ":" << " " << data_value * 0.847033 << endl;
+                    cout << "Yobibyte" << ":" << " " << data_value * 0.0009765625 << endl;
                 }
                 else if (convert == "YB")
                 {
@@ -1512,7 +1513,7 @@ int main()
                     cout << "Pebibyte" << ":" << " " << data_value * 1073741824 << endl;
                     cout << "Exbibyte" << ":" << " " << data_value * 1048576 << endl;
                     cout << "Zebibyte" << ":" << " " << data_value * 1024 << endl;
-                    cout << "Yobibyte" << ":" << " " << data_value * 1 << endl;
+                    cout << "Yobibyte" << ":" << " " << data_value * 0.827181 << endl;
                 }
             }
         }
