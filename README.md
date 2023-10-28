@@ -16,6 +16,8 @@ This is a command-line unit converter that currently supports temperature, weigh
 
 (L) Length
 
+(TI) Time
+
 Select unit: T
 
 (C) Celcius
@@ -39,6 +41,8 @@ Kelvin: 283.15
 (W) Weight
 
 (L) Length
+
+(TI) Time
 
 Select unit:
 ```
