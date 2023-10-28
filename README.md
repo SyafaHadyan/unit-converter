@@ -88,3 +88,18 @@ The program will loop itself indefinetely until you press `Q`
 - (LIGHT) Light Year
 
 ### Time
+
+- (S) Second
+- (MS) Millisecond
+- (US) Microsecond
+- (NS) Nanosecond
+- (PS) Picosecond
+- (MIN) Minute
+- (HR) Hour
+- (DAY) Day
+- (WK) Week
+- (MON) Month
+- (YR) Year
+- (DEC) Decade
+- (CEN) Century
+- (MIL) Millenium"
