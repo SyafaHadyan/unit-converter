@@ -1294,6 +1294,13 @@ int main()
                     cout << "Century" << ":" << " " << time_value * 10 << endl;
                 }
             }
+            else if (unit_select == "D")
+            {
+                for (auto& data_list : data_units)
+                {
+                    cout << "\n" << data_list << "\n" << endl;
+                }
+            }
         }
         else
         {
