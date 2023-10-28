@@ -86,3 +86,5 @@ The program will loop itself indefinetely until you press `Q`
 - (IN) Inch
 - (NAUT) Nautical Mile
 - (LIGHT) Light Year
+
+### Time
