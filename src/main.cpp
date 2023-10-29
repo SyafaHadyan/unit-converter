@@ -14,6 +14,7 @@ long double weight_value;
 long double length_value;
 long double time_value;
 long double data_value;
+long double area_value;
 string unit_select;
 string convert;
 
