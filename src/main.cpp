@@ -183,6 +183,7 @@ int main()
         cout << "(TI)" << " " << "Time" << "\n" << endl;
         cout << "(D)" << " " << "Data" << "\n" << endl;
         cout << "(A)" << " " << "Area" << "\n" << endl;
+        cout << "(Q)" << " " << "Quit the program" << "\n" << endl;
         
         cout << "Select unit" << ":" << " ";
         cin >> unit_select;
