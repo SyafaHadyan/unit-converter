@@ -190,7 +190,66 @@ int main()
 
         std::transform(unit_select.begin(), unit_select.end(), unit_select.begin(), ::toupper);
 
-        if (unit_select == "T" || unit_select == "W" || unit_select == "L" || unit_select == "TI" || unit_select == "D")
+        if (unit_select == "T" || unit_select == "W" || unit_select == "L" || unit_select == "TI" || unit_select == "D" || unit_select == "A")
+        {
+            if (unit_select == "T")
+            {
+                for (auto& temperature_list : temperature_units)
+                {
+                    cout << "\n" << temperature_list << "\n" << endl;
+                }
+
+                input_unit_convert();
+
+                if (convert == "C")
+                {
+                    input_temperature();
+
+                    newline();
+
+                    cout << "Fahrenheit" << ":" << " " << ((temperature_value * 9) / 5) + 32 << endl;
+                    cout << "Kelvin" << ":" << " " << temperature_value + 273.15 << endl;
+                    
+                }
+                else if (convert == "F")
+                {
+                    input_temperature();
+
+                    newline();
+
+                    cout << "Celcius" << ":" << " " << ((temperature_value - 32) * 5) / 9 << endl;
+                    cout << "Kelvin" << ":" << " " << temperature_value + 459.67 << endl;
+                }
+                else if (convert == "K")
+                {
+                    input_temperature();
+
+                    newline();
+
+                    cout << "Celcius" << ":" << " " << (temperature_value - 273.15) << endl;
+                    cout << "Fahrenheit" << ":" << " " << ((temperature_value - 273.15) * 9) / 5 + 32 << endl;
+                }
+            }
+            else if (unit_select == "W")
+            {
+                for (auto& weight_list : weight_units)
+                {
+                    cout << "\n" << weight_list << "\n" << endl;
+                }
+
+                input_unit_convert();
+
+                if (convert == "MG")
+                {
+                    input_weight();
+
+                    newline();
+
+                    cout << "Centigram" << ":" << " " << weight_value * 0.1 << endl;
+                    cout << "Decigram" << ":" << " " << weight_value * 0.01 << endl;
+                    cout << "Gram" << ":" << " " << weight_value * 0.001 << endl;
+                    cout << "Dekagram" << ":" << " " << weight_value * 0.0001 << endl;
+                    cout << "Hectogram" << ":" << " " << weight_value * 0.
         {
             if (unit_select == "T")
                 {
