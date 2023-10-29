@@ -1,6 +1,6 @@
 # Unit Converter
 
-This is a command-line unit converter that currently supports temperature, weight, and length conversion. More conversions will be added in the future.
+This is a command-line unit converter that currently supports temperature, weight, length, time, and data conversion. More conversions may be added in the future.
 
 ## Usage
 
@@ -9,47 +9,7 @@ This is a command-line unit converter that currently supports temperature, weigh
 3. Enter the value of the unit to convert.
 4. The program will display the converted values.
 
-```
-(T) Temperature
-
-(W) Weight
-
-(L) Length
-
-(TI) Time
-
-Select unit: T
-
-(C) Celcius
-
-
-(F) Fahrenheit
-
-
-(K) Kelvin
-
-Enter Unit: C
-Enter temperature: 10
-
-
-Fahrenheit: 50
-Kelvin: 283.15
-
-
-(T) Temperature
-
-(W) Weight
-
-(L) Length
-
-(TI) Time
-
-Select unit:
-```
-
-***
-
-The program will loop itself indefinetely until you press `Q`
+The program will loop indefinitely until you press `Q`.
 
 ## Available Units
 
@@ -106,4 +66,133 @@ The program will loop itself indefinetely until you press `Q`
 - (YR) Year
 - (DEC) Decade
 - (CEN) Century
-- (MIL) Millenium"
+- (MIL) Millenium
+
+### Data
+
+- (B) Byte
+- (KB) Kilobyte
+- (MB) Megabyte
+- (GB) Gigabyte
+- (TB) Terabyte
+- (PB) Petabyte
+- (EB) Exabyte
+- (ZB) Zettabyte
+- (YB) Yottabyte
+- (BIT) Bit
+- (KIB) Kibibyte
+- (MIB) Mebibyte
+- (GIB) Gibibyte
+- (TIB) Tebibyte
+- (PIB) Pebibyte
+- (EIB) Exbibyte
+- (ZIB) Zebibyte
+- (YIB) Yobibyte
+
+## Example Usage
+
+Start the program simply by double-clicking the `.exe` file or use `.\main.exe`
+
+```md
+(T) Temperature
+
+(W) Weight
+
+(L) Length
+
+(TI) Time
+
+(D) Data
+
+Select unit: d
+
+(B) Byte
+
+
+(KB) Kilobyte
+
+
+(MB) Megabyte
+
+
+(GB) Gigabyte
+
+
+(TB) Terabyte
+
+
+(PB) Petabyte
+
+
+(EB) Exabyte
+
+
+(ZB) Zettabyte
+
+
+(YB) Yottabyte
+
+
+(BIT) Bit
+
+
+(KIB) Kibibyte
+
+
+(MIB) Mebibyte
+
+
+(GIB) Gibibyte
+
+
+(TIB) Tebibyte
+
+
+(PIB) Pebibyte
+
+
+(EIB) Exbibyte
+
+
+(ZIB) Zebibyte
+
+
+(YIB) Yobibyte
+
+Enter Unit: kib
+Enter data: 8
+
+
+Byte: 8192
+Kilobyte: 0.0078125
+Megabyte: 7.62939e-06
+Gigabyte: 7.45058e-09
+Terabyte: 7.27596e-12
+Petabyte: 7.10543e-15
+Exabyte: 6.93889e-18
+Zettabyte: 6.77626e-21
+Yottabyte: 6.61744e-24
+Bit: 65536
+Mebibyte: 0.0078125
+Gibibyte: 7.62939e-06
+Tebibyte: 7.45058e-09
+Pebibyte: 7.27596e-12
+Exbibyte: 7.10543e-15
+Zebibyte: 6.93889e-18
+Yobibyte: 6.77626e-21
+
+
+(T) Temperature
+
+(W) Weight
+
+(L) Length
+
+(TI) Time
+
+(D) Data
+
+Select unit: q
+```
+
+Note that the program will loop indefinitely until you press `Q`.
