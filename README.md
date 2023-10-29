@@ -106,4 +106,25 @@ The program will loop itself indefinetely until you press `Q`
 - (YR) Year
 - (DEC) Decade
 - (CEN) Century
-- (MIL) Millenium"
+- (MIL) Millenium
+
+### Data
+
+- (B) Byte
+- (KB) Kilobyte
+- (MB) Megabyte
+- (GB) Gigabyte
+- (TB) Terabyte
+- (PB) Petabyte
+- (EB) Exabyte
+- (ZB) Zettabyte
+- (YB) Yottabyte
+- (BIT) Bit
+- (KIB) Kibibyte
+- (MIB) Mebibyte
+- (GIB) Gibibyte
+- (TIB) Tebibyte
+- (PIB) Pebibyte
+- (EIB) Exbibyte
+- (ZIB) Zebibyte
+- (YIB) Yobibyte
