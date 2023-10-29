@@ -61,6 +61,12 @@ void input_data()
     cin >> data_value;
 }
 
+void input_area()
+{
+    cout << "Enter area" << ":" << " ";
+    cin >> area_value;
+}
+
 int main()
 {
     vector<string> temperature_units =
