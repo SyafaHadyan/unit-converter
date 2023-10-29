@@ -157,6 +157,24 @@ int main()
         "(YIB) Yobibyte"
     };
 
+    vector<string> area_units =
+    {
+        "(SQM) Square Meter",
+        "(SQKM) Square Kilometer",
+        "(SQCM) Square Centimeter",
+        "(SQMM) Square Millimeter",
+        "(SQMC) Square Micrometer",
+        "(SQNM) Square Nanometer",
+        "(SQMI) Square Mile",
+        "(SQYD) Square Yard",
+        "(SQFT) Square Foot",
+        "(SQIN) Square Inch",
+        "(SQNAUT) Square Nautical Mile",
+        "(SQLIGHT) Square Light Year",
+        "(HECT) Hectare",
+        "(ACRE) Acre"
+    };
+
     do {
         cout << "\n" << endl;
         cout << "(T)" << " " << "Temperature" << "\n" << endl;
