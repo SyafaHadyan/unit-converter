@@ -1759,6 +1759,15 @@ int main()
                     cout << "Zebibyte" << ":" << " " << data_value * 1024 << endl;
                 }
             }
+            else if (unit_select == "A")
+            {
+                for (auto& area_list : area_units)
+                {
+                    cout << "\n" << area_list << "\n" << endl;
+                }
+
+                input_unit_convert();
+            }
         }
         else
         {
