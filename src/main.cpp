@@ -9,7 +9,7 @@
 
 using namespace std;
 
-long double temperature;
+long double temperature_value;
 long double weight;
 long double length_value;
 long double time_value;
@@ -33,7 +33,7 @@ void input_unit_convert()
 void input_temperature()
 {
     cout << "Enter temperature" << ":" << " ";
-    cin >> temperature;
+    cin >> temperature_value;
 }
 
 void input_weight()
@@ -180,8 +180,8 @@ int main()
 
                     newline();
 
-                    cout << "Fahrenheit" << ":" << " " << ((temperature * 9) / 5) + 32 << endl;
-                    cout << "Kelvin" << ":" << " " << temperature + 273.15 << endl;
+                    cout << "Fahrenheit" << ":" << " " << ((temperature_value * 9) / 5) + 32 << endl;
+                    cout << "Kelvin" << ":" << " " << temperature_value + 273.15 << endl;
                     
                 }
                 else if (convert == "F")
@@ -190,8 +190,8 @@ int main()
 
                     newline();
 
-                    cout << "Celcius" << ":" << " " << ((temperature - 32) * 5) / 9 << endl;
-                    cout << "Kelvin" << ":" << " " << temperature + 459.67 << endl;
+                    cout << "Celcius" << ":" << " " << ((temperature_value - 32) * 5) / 9 << endl;
+                    cout << "Kelvin" << ":" << " " << temperature_value + 459.67 << endl;
                 }
                 else if (convert == "K")
                 {
@@ -199,8 +199,8 @@ int main()
 
                     newline();
 
-                    cout << "Celcius" << ":" << " " << (temperature - 273.15) << endl;
-                    cout << "Fahrenheit" << ":" << " " << ((temperature - 273.15) * 9) / 5 + 32 << endl;
+                    cout << "Celcius" << ":" << " " << (temperature_value - 273.15) << endl;
+                    cout << "Fahrenheit" << ":" << " " << ((temperature_value - 273.15) * 9) / 5 + 32 << endl;
                 }
             }
             else if (unit_select == "W")
