@@ -170,7 +170,6 @@ int main()
         "(SQFT) Square Foot",
         "(SQIN) Square Inch",
         "(SQNAUT) Square Nautical Mile",
-        "(SQLIGHT) Square Light Year",
         "(HECT) Hectare",
         "(ACRE) Acre"
     };
@@ -1767,6 +1766,26 @@ int main()
                 }
 
                 input_unit_convert();
+
+                if (convert == "SQM")
+                {
+                    input_area();
+
+                    newline();
+
+                    cout << "Square Kilometer" << ":" << " " << area_value * 0.000001 << endl;
+                    cout << "Square Centimeter" << ":" << " " << area_value * 10000 << endl;
+                    cout << "Square Millimeter" << ":" << " " << area_value * 1000000 << endl;
+                    cout << "Square Micrometer" << ":" << " " << area_value * 1000000000000 << endl;
+                    cout << "Square Nanometer" << ":" << " " << area_value * 1000000000000000000 << endl;
+                    cout << "Square Mile" << ":" << " " << area_value * 0.00000038610215854245 << endl;
+                    cout << "Square Yard" << ":" << " " << area_value * 1.1959900463011 << endl;
+                    cout << "Square Foot" << ":" << " " << area_value * 10.76391041671 << endl;
+                    cout << "Square Inch" << ":" << " " << area_value * 1550.0031000062 << endl;
+                    cout << "Square Nautical Mile" << ":" << " " << area_value * 0.00000029155317857705 << endl;
+                    cout << "Hectare" << ":" << " " << area_value * 0.0001 << endl;
+                    cout << "Acre" << ":" << " " << area_value * 0.00024710538146717 << endl;
+                }
             }
         }
         else
