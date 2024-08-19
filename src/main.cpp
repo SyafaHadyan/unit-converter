@@ -1792,7 +1792,7 @@ int main()
 
                     newline();
 
-                    
+                    cout << "Square Meter" << ":" << " " << area_value * 10000 << endl;
                 }
             }
         }
