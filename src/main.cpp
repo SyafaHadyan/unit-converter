@@ -1786,6 +1786,14 @@ int main()
                     cout << "Hectare" << ":" << " " << area_value * 0.0001 << endl;
                     cout << "Acre" << ":" << " " << area_value * 0.00024710538146717 << endl;
                 }
+                else if (convert == "SQKM")
+                {
+                    input_area();
+
+                    newline();
+
+                    
+                }
             }
         }
         else
