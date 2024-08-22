@@ -9,7 +9,7 @@ This is a command-line unit converter that currently supports temperature, weigh
 3. Enter the value of the unit to convert.
 4. The program will display the converted values.
 
-The program will loop indefinitely until you press `Q`.
+The program will loop indefinitely until you press `q` or `Q`.
 
 ## Available Units
 
@@ -195,4 +195,4 @@ Yobibyte: 6.77626e-21
 Select unit: q
 ```
 
-Note that the program will loop indefinitely until you press `Q`.
+The program will loop indefinitely until you press `q` or `Q`.
