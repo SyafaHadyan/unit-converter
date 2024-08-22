@@ -1793,6 +1793,7 @@ int main()
                     newline();
 
                     cout << "Square Meter" << ":" << " " << area_value * 1000000 << endl;
+                    cout << "Square Centimeter" << ":" << " " << area_value * 10000000000 << endl;
                 }
             }
         }
