@@ -1798,6 +1798,7 @@ int main()
                     cout << "Square MicroMeter" << ":" << " " << area_value * 1000000000000000 << endl;
                     cout << "Square Nanometer" << ":" << " " << area_value * 1000000000000000000000 << endl;
                     cout << "Square Mile" << ":" << " " << area_value * 0.38610215854245 << endl;
+                    cout << "Square Yard" << ":" << " " << area_value * 1195990.0463011 << endl;
                 }
             }
         }
