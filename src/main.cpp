@@ -1821,6 +1821,7 @@ int main()
                     cout << "Square Foot" << ":" << " " << area_value * 0.001076391 << endl;
                     cout << "Square Inch" << ":" << " " << area_value * 0.15500031 << endl;
                     cout << "Square Nautical MIle" << ":" << " " << area_value * 2.9155334959812 << endl;
+                    cout << "Hectare" << ":" << " " << area_value * 0.00000001 << endl;
                 }
             }
         }
