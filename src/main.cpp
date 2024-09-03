@@ -1845,9 +1845,11 @@ int main()
                 }
                 else if (convert == "SQMC")
                 {
-                input_area();
+                    input_area();
 
-                newline();
+                    newline();
+
+                    cout << "Square Meter" << ":" << " " << area_value * 0.000000000001 << endl;
                 }
             }
         }
