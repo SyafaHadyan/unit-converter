@@ -1844,10 +1844,11 @@ int main()
                     cout << "Acre" << ":" << " " << area_value * 0.00000024710538146717 << endl;
                 }
                 else if (convert == "SQMC")
-
+                {
                 input_area();
 
                 newline();
+                }
             }
         }
         else
